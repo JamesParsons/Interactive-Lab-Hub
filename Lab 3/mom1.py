@@ -24,6 +24,7 @@ while x == 0:
     print(response)
     
     if response == 1:
+        print("should be speaking")
         engine.say("Hi honey you look tired, did you get enough sleep?")
     #if response == 3:
         #engine.say("I am sure that is not true, but if you are worried you can skip soccer tomorrow so you will have more time to study")
