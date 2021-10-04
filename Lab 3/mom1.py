@@ -24,6 +24,8 @@ def respond(response):
         engine.say("How was work today?")
     if response == 2:
         engine.say("sit up straight")
+        
+    engine.runAndWait()
 
 
 # RATE
@@ -43,9 +45,19 @@ response = int(response)
 
 print(response)
 
-respond(response)
+x = 0
+while x ==0:
+    
+    response = input()
+    if response == x:
+        x = 1
+    else:
+        response = int(response)
+    
+    print(response)    
+    respond(response)
 
-engine.runAndWait()
+#engine.runAndWait()
 
 
 # female voice found here https://stackoverflow.com/questions/57751564/pyttsx3-voice-gender-female
