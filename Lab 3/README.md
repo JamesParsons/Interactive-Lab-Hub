@@ -111,6 +111,9 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 \*\***Please describe and document your process.**\*\*
 
+[IDD Lab 3 Part 1 Dialogue.docx](https://github.com/JamesParsons/Interactive-Lab-Hub/files/7278529/IDD.Lab.3.Part.1.Dialogue.docx)
+
+
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
