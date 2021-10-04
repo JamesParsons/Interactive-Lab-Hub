@@ -18,10 +18,8 @@ x = 0
 
 while x == 0:
     response = input()
-    if response == 'x':
-        x = 1
-    else:
-        response = int(response)
+   
+    response = int(response)
     
     print(response)
     
@@ -41,9 +39,10 @@ while x == 0:
         engine.say("Hi honey how was school?")
     if response == 9:
         engine.say("How was work today?")
-    if response == 10:
+    if response == 2:
         engine.say("sit up straight")
-    if response == 'x':
+   
+    if response == 10:
         x = 1
 
 
