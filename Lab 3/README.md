@@ -135,6 +135,7 @@ https://user-images.githubusercontent.com/89811189/135876861-ae3b46cf-cf75-48e6-
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+I got the web page to display hello world but could not figure out what to do with it / how to work it from there.
 
 # Lab 3 Part 2
 
