@@ -55,8 +55,10 @@ You can also play audio files directly with `aplay filename`. Try typing `aplay 
 
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
 (This shell file should be saved to your own repo for this lab.)
-mine is saved in Lab 3 as 'hello3.py'
-also morning.sh
+mine is saved in Lab 3 as 
+'hello3.py'
+also 
+morning.sh
 
 Bonus: If this topic is very exciting to you, you can try out this new TTS system we recently learned about: https://github.com/rhasspy/larynx
 
