@@ -10,6 +10,25 @@ apds.enable_proximity = True
 apds.proximity_interrupt_threshold = (0, 175)
 apds.enable_proximity_interrupt = True
 
+apds.enable_color = True
+apds.enable_gesture = True
+
+#r, g, b, c = sensor.color_data
+#print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
+
+gesture = apds.gesture()
+while gesture == 0:
+    gesture = apds.gesture()
+print('Saw gesture: {0}'.format(gesture))
+
+
 while True:
     print(apds.proximity)
     apds.clear_interrupt()
+    
+    r, g, b, c = sensor.color_data
+    print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
+    
+    
+    
+    
