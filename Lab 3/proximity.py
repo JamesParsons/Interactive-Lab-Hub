@@ -13,7 +13,7 @@ apds.enable_proximity_interrupt = True
 apds.enable_color = True
 apds.enable_gesture = True
 
-#r, g, b, c = sensor.color_data
+#r, g, b, c = apds.color_data
 #print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
 
 gesture = apds.gesture()
@@ -26,8 +26,8 @@ while True:
     print(apds.proximity)
     apds.clear_interrupt()
     
-    r, g, b, c = sensor.color_data
-    print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
+    #r, g, b, c = apds.color_data
+    #print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
     
     
     
