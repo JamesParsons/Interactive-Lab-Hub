@@ -52,10 +52,10 @@ def findResponse(spoken):
     if "mom" in spoken:
         print("Hi Dear")
         
-    if apds.proximity <= 100:
-        print("Aww let mommy hug you")
-        engine.say("Do you need a hug?")
-        engine.runAndWait()     
+    #if apds.proximity <= 100:
+        #print("Aww let mommy hug you")
+        #engine.say("Do you need a hug?")
+        #engine.runAndWait()     
   
   
     
@@ -80,6 +80,11 @@ def getSpeech():
     
 while True:
     getSpeech()
+    
+    if apds.proximity <= 50:
+        print("Aww let mommy hug you")
+        engine.say("Do you need a hug?")
+        engine.runAndWait()      
     
     
  
