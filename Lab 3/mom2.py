@@ -30,7 +30,7 @@ apds.enable_color = True
 apds.enable_gesture = True
 gesture = apds.gesture()
 
-stopper = 0   
+
 
 #while gesture == 0:
     #gesture = apds.gesture()
@@ -109,7 +109,7 @@ def prox():
  
 while True:
     
-  
+    stopper = 0   
     prox()   
     #getSpeech()
     #gesture = apds.gesture()
