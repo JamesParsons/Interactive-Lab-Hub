@@ -18,6 +18,8 @@ def findResponse(spoken):
     
     if "goodbye" in spoken:
         print("Goodbye honey")
+        engine.say("Goodbye Honey")
+        engine.runAndWait()
         exit()    
     
     if "hello" in spoken:
@@ -27,8 +29,9 @@ def findResponse(spoken):
         
     if "mom" in spoken:
         print("Hi Dear")
-    if "Mom" in spoken:
-        print("Hi Dear")   
+  
+        
+    
    
 
 def getSpeech():
@@ -41,7 +44,9 @@ def getSpeech():
         recog = r.recognize_google(audio, language = 'en-US')
     
         print("You said: " + recog)
-        findResponse(recog)
+        
+        lower = recog.lower()
+        findResponse(lower)
     except sr.UnknownValueError:
         print("Google Speech Recognition could not understand audio")
     except sr.RequestError as e:
