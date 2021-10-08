@@ -1,5 +1,17 @@
 import speech_recognition as sr
 
+
+def findResponse(spoken):
+    if "hello" in spoken:
+        print("found hello")
+
+
+
+
+
+
+
+
 r = sr.Recognizer()
 speech = sr.Microphone(device_index=2)
 with speech as source:
@@ -10,10 +22,7 @@ try:
     recog = r.recognize_google(audio, language = 'en-US')
 
     print("You said: " + recog)
-    print(recog[:])
-    
-    if "hello" in recog:
-        print("found hello")
+    findResponse(recog)
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
