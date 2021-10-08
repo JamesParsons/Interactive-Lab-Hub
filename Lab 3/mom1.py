@@ -24,7 +24,7 @@ apds = APDS9960(i2c, interrupt_pin=int_pin)
 apds.enable_proximity = True
 apds.proximity_interrupt_threshold = (0, 250)
 apds.enable_proximity_interrupt = True
-stopper = 0
+
 
 apds.enable_color = True
 apds.enable_gesture = True
@@ -52,11 +52,11 @@ def findResponse(spoken):
     if "mom" in spoken:
         print("Hi Dear")
         
-    if apds.proximity <= 100 and stopper == 0:
+    if apds.proximity <= 100:
         print("Aww let mommy hug you")
         engine.say("Do you need a hug?")
         engine.runAndWait()     
-        stopper = 1
+  
   
     
 
