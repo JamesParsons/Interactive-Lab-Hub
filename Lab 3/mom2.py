@@ -97,7 +97,6 @@ def getSpeech():
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
  
-stopper = 0 
 
 def prox():
     if apds.proximity >= 50 and stopper == 0:
@@ -106,7 +105,7 @@ def prox():
         engine.runAndWait() 
         stopper = 1
         
-    
+stopper = 0    
 while True:
     
   
