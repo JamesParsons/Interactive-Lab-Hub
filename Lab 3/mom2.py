@@ -107,7 +107,7 @@ def prox():
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
-        apds.proximity = 0
+        apds.clearInterrupt()
 
    
  
