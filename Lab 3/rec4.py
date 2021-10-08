@@ -33,7 +33,7 @@ def getSpeech():
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
     
-while stoper == 0:
+while stopper == 0:
     getSpeech()
     
     
