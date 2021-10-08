@@ -3,10 +3,14 @@ import speech_recognition as sr
 
 r = sr.Recognizer()
 speech = sr.Microphone(device_index=2)
-stopper = 0
 
 
 def findResponse(spoken):
+    
+    if "goodbye" in spoken:
+        print("Goodbye honey")
+        exit()    
+    
     if "hello" in spoken:
         print("found hello")
         
@@ -14,10 +18,7 @@ def findResponse(spoken):
         print("Hi Dear")
     if "Mom" in spoken:
         print("Hi Dear")   
-    if "goodbye" in spoken:
-        stopper = 1
-        print("Goodbye honey")
-        exit()
+   
 
 def getSpeech():
 
@@ -35,7 +36,7 @@ def getSpeech():
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
     
-while stopper == 0:
+while True:
     getSpeech()
     
     
