@@ -108,9 +108,9 @@ while True:
         engine.runAndWait() 
         stopper = 1
         
-    #getSpeech()
-    #gesture = apds.gesture()
-    #print('Saw gesture: {0}'.format(gesture))  
+    getSpeech()
+    gesture = apds.gesture()
+    print('Saw gesture: {0}'.format(gesture))  
     
   
  
