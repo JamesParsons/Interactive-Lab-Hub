@@ -96,12 +96,17 @@ def getSpeech():
         print("Google Speech Recognition could not understand audio")
     except sr.RequestError as e:
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
+ 
+ 
+stopper = 0 
     
 while True:
-    if apds.proximity >= 150:
+    
+    if apds.proximity >= 150 and stopper == 0:
         print("You want a hug?")
         engine.say("Come get a hug")
-        engine.runAndWait()        
+        engine.runAndWait() 
+        stopper = 1
         
     #getSpeech()
     #gesture = apds.gesture()
