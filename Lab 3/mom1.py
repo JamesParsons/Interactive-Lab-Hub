@@ -1,5 +1,8 @@
 import speech_recognition as sr
 import pyttsx3
+import board
+import digitalio
+from adafruit_apds9960.apds9960 import APDS9960
 
 # Speech to text stuff:
 r = sr.Recognizer()
@@ -12,6 +15,25 @@ rate = engine.getProperty('rate')
 engine.setProperty('rate', 125)   # slower is lower number
 voices = engine.getProperty('voices')
 engine.setProperty('voice', 'english_rp+f4')
+
+# proximity / gesture stuff
+i2c = board.I2C()
+int_pin = digitalio.DigitalInOut(board.D5)
+apds = APDS9960(i2c, interrupt_pin=int_pin)
+
+apds.enable_proximity = True
+apds.proximity_interrupt_threshold = (0, 250)
+apds.enable_proximity_interrupt = True
+stopper = 0
+
+apds.enable_color = True
+apds.enable_gesture = True
+gesture = apds.gesture()
+
+
+#while gesture == 0:
+    #gesture = apds.gesture()
+#print('Saw gesture: {0}'.format(gesture))
 
 
 def findResponse(spoken):
@@ -29,10 +51,14 @@ def findResponse(spoken):
         
     if "mom" in spoken:
         print("Hi Dear")
-  
         
+    if apds.proximity <= 100 and stopper == 0:
+        print("Aww let mommy hug you")
+        engine.say("Do you need a hug?")
+        engine.runAndWait()     
+        stopper = 1
+  
     
-   
 
 def getSpeech():
 
