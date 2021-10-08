@@ -1,64 +1,60 @@
-
+import speech_recognition as sr
 import pyttsx3
 
+# Speech to text stuff:
+r = sr.Recognizer()
+speech = sr.Microphone(device_index=2)
+
+
+# Text to speech stuff:
 engine = pyttsx3.init()
-
-def respond(response):
-
-    if response == 1:
-        print("should be speaking")
-        engine.say("Hi honey you look tired, did you get enough sleep?")
-    if response == 3:
-        engine.say("I am sure that is not true, but if you are worried you can skip soccer tomorrow so you will have more time to study")
-    if response == 4:
-        engine.say("I am sorry, maybe try to avoid her for a little while.  No sense in stooping to her level")
-    if response == 5:
-        engine.say("What would you like for dinner?")
-    if response == 6:
-        engine.say("You always want hamburgers and pizza.  I do not have the stuff for that.  How about some nice chicken and rice with a salad?")
-    if response == 7:
-        engine.say("I am sorry to hear that, tell me all about it while i make us some coffee")
-    if response == 8:
-        engine.say("Hi honey how was school?")
-    if response == 9:
-        engine.say("How was work today?")
-    if response == 2:
-        engine.say("sit up straight")
-        
-    engine.runAndWait()
-
-
-# RATE
 rate = engine.getProperty('rate')
 engine.setProperty('rate', 125)   # slower is lower number
-
-# VOICE
 voices = engine.getProperty('voices')
 engine.setProperty('voice', 'english_rp+f4')
 
 
-
-
-response = input()
-
-response = int(response)
-
-print(response)
-
-x = 0
-while x ==0:
+def findResponse(spoken):
     
-    response = input()
-    if response == x:
-        x = 1
-    else:
-        response = int(response)
+    if "goodbye" in spoken:
+        print("Goodbye honey")
+        exit()    
     
-    print(response)    
-    respond(response)
+    if "hello" in spoken:
+        print("found hello")
+        engine.say("Hello")
+        engine.runAndWait()        
+        
+    if "mom" in spoken:
+        print("Hi Dear")
+    if "Mom" in spoken:
+        print("Hi Dear")   
+   
 
-#engine.runAndWait()
+def getSpeech():
 
+    with speech as source:
+        print("say something!…")
+        #audio = r.adjust_for_ambient_noise(source)
+        audio = r.listen(source)
+    try:
+        recog = r.recognize_google(audio, language = 'en-US')
+    
+        print("You said: " + recog)
+        findResponse(recog)
+    except sr.UnknownValueError:
+        print("Google Speech Recognition could not understand audio")
+    except sr.RequestError as e:
+        print("Could not request results from Google Speech Recognition service; {0}".format(e))
+    
+while True:
+    getSpeech()
+    
+    
+ 
+ 
 
-# female voice found here https://stackoverflow.com/questions/57751564/pyttsx3-voice-gender-female
-# gotten from https://pyttsx3.readthedocs.io/en/latest/engine.html#module-pyttsx3.voice
+## female voice found here https://stackoverflow.com/questions/57751564/pyttsx3-voice-gender-female
+## gotten from https://pyttsx3.readthedocs.io/en/latest/engine.html#module-pyttsx3.voice
+## basic funstionality for the speech to text part gotten from:
+## https://maker.pro/raspberry-pi/projects/speech-recognition-using-google-speech-api-and-python
