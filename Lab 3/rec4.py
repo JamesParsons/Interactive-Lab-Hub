@@ -7,6 +7,8 @@ def findResponse(spoken):
         
     if "mom" in spoken:
         print("Hi Dear")
+    if "Mom" in spoken:
+        print("Hi Dear")    
 
 
 
