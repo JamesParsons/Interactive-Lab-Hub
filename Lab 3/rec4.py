@@ -11,6 +11,9 @@ try:
 
     print("You said: " + recog)
     print(recog[:])
+    
+    if hello in recog:
+        print("found hello")
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
