@@ -17,6 +17,7 @@ def findResponse(spoken):
     if "goodbye" in spoken:
         stopper = 1
         print("Goodbye honey")
+        exit()
 
 def getSpeech():
 
