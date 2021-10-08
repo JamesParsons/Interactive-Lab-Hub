@@ -102,7 +102,7 @@ stopper = 0
     
 while True:
     
-    if apds.proximity >= 150 and stopper == 0:
+    if apds.proximity >= 50 and stopper == 0:
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
