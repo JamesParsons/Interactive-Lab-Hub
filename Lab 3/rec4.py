@@ -40,4 +40,8 @@ while True:
     getSpeech()
     
     
-    
+ 
+ 
+ 
+## basic funstionality for the speech to text part gotten from:
+## https://maker.pro/raspberry-pi/projects/speech-recognition-using-google-speech-api-and-python
