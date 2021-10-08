@@ -99,13 +99,17 @@ def getSpeech():
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
  
 
+
 def prox():
- 
+    
+    
     if apds.proximity >= 50 and stopper == 0:
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
-    break
+        apds.proximity = 0
+
+   
  
         
  
