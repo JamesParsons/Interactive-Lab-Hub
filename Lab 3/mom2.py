@@ -30,6 +30,7 @@ apds.enable_color = True
 apds.enable_gesture = True
 gesture = apds.gesture()
 
+stopper = 0   
 
 #while gesture == 0:
     #gesture = apds.gesture()
@@ -105,14 +106,14 @@ def prox():
         engine.runAndWait() 
         stopper = 1
         
-stopper = 0    
+ 
 while True:
     
   
     prox()   
     #getSpeech()
-    gesture = apds.gesture()
-    print('Saw gesture: {0}'.format(gesture))  
+    #gesture = apds.gesture()
+    #print('Saw gesture: {0}'.format(gesture))  
     
   
  
