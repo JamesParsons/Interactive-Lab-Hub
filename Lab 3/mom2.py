@@ -105,7 +105,7 @@ def prox():
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
-        break
+    break
  
         
  
