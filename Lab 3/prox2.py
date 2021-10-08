@@ -18,14 +18,14 @@ apds.enable_gesture = True
 
 gesture = apds.gesture()
 
-while gesture == 0:
-    gesture = apds.gesture()
-print('Saw gesture: {0}'.format(gesture))
+#while gesture == 0:
+    #gesture = apds.gesture()
+#print('Saw gesture: {0}'.format(gesture))
 
 
-#while True:
-    #print(apds.proximity)
-    #apds.clear_interrupt()
+while True:
+    print(apds.proximity)
+    apds.clear_interrupt()
     
     #r, g, b, c = apds.color_data
     #print('Red: {0}, Green: {1}, Blue: {2}, Clear: {3}'.format(r, g, b, c))
