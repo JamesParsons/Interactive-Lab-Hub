@@ -59,8 +59,23 @@ def findResponse(spoken):
         #engine.runAndWait()        
         resp = resp + " " + "dear"
         
+
     engine.say(resp)
     engine.runAndWait()
+    
+    if "dinner" is spoken:
+        resp = "What would you like?  swipe up for pizza and down for chicken"
+        engine.say(resp)
+        engine.runAndWait()
+        gesture = apds.gesture()
+        print('Saw gesture: {0}'.format(gesture)) 
+        
+        if gesture == 1:
+            engine.say("Pizza it is")
+            engine.runAndWait()
+        elif gesture == 2:
+            engine.say("Chicken will be yummy")
+            engine.runAndWait()            
   
     
 
@@ -84,8 +99,8 @@ def getSpeech():
     
 while True:
     getSpeech()
-    gesture = apds.gesture()
-    print('Saw gesture: {0}'.format(gesture))    
+    #gesture = apds.gesture()
+    #print('Saw gesture: {0}'.format(gesture))    
       
     
     
