@@ -10,6 +10,7 @@ try:
     recog = r.recognize_google(audio, language = 'en-US')
 
     print("You said: " + recog)
+    print(recog[1])
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
