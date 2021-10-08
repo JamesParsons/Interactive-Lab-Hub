@@ -4,6 +4,9 @@ import speech_recognition as sr
 def findResponse(spoken):
     if "hello" in spoken:
         print("found hello")
+        
+    if "mom" in spoken:
+        print("Hi Dear")
 
 
 
