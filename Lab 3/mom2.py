@@ -103,7 +103,7 @@ while True:
         engine.say("Come get a hug")
         engine.runAndWait()        
         
-    getSpeech()
+    #getSpeech()
     #gesture = apds.gesture()
     #print('Saw gesture: {0}'.format(gesture))  
     
