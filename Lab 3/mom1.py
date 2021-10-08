@@ -81,7 +81,7 @@ def getSpeech():
 while True:
     getSpeech()
     
-    if apds.proximity <= 50:
+    if apds.proximity <= 10:
         print("Aww let mommy hug you")
         engine.say("Do you need a hug?")
         engine.runAndWait()      
