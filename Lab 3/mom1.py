@@ -38,6 +38,8 @@ gesture = apds.gesture()
 
 def findResponse(spoken):
     
+    resp = ""
+    
     if "goodbye" in spoken:
         print("Goodbye honey")
         engine.say("Goodbye Honey")
@@ -46,17 +48,19 @@ def findResponse(spoken):
     
     if "hello" in spoken:
         print("found hello")
-        engine.say("Hello")
-        engine.runAndWait()        
+        #engine.say("Hello")
+        #engine.runAndWait() 
+        resp = resp + "Hello"
+
         
     if "mom" in spoken:
-        print("Hi Dear")
+        print("Hi dear")
+        #engine.say("Dear")
+        #engine.runAndWait()        
+        resp = resp + " " + "dear"
         
-    #if apds.proximity <= 100:
-        #print("Aww let mommy hug you")
-        #engine.say("Do you need a hug?")
-        #engine.runAndWait()     
-  
+    engine.say(resp)
+    engine.runAndWait()
   
     
 
