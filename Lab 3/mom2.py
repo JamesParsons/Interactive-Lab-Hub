@@ -103,7 +103,7 @@ def getSpeech():
 def prox():
     
     
-    if apds.proximity >= 50 and stopper == 0:
+    if apds.proximity >= 50:
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
