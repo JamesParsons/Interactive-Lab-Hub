@@ -129,8 +129,8 @@ def gesture():
 stopProx = 0 
 while True:
     
-    
-    prox()   
+    if stopProx == 0:
+        prox()   
     #getSpeech()
     #gesture()
 
