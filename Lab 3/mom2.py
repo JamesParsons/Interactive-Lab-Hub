@@ -59,11 +59,7 @@ def findResponse(spoken):
         #engine.say("Dear")
         #engine.runAndWait()        
         resp = resp + " " + "dear"
-        
-
-    engine.say(resp)
-    engine.runAndWait()
-    
+          
     if "dinner" is spoken:
         resp = "What would you like?  swipe up for pizza and down for chicken"
         engine.say(resp)
@@ -71,10 +67,12 @@ def findResponse(spoken):
         choice = gesture()
         print("Choice returned: ", choice)
         if choice == 2:
-            engine.say("Ok pizza it is!")
+            resp = "Pizza is on the way"
         elif choice == 4:
-            engine.say("Chicken will be delicious")
-        engine.runAndWait()
+            resp = "Chicken will be delicious"
+        
+    engine.say(resp)
+    engine.runAndWait()    
   
     
 
@@ -86,7 +84,7 @@ def getSpeech():
         audio = r.listen(source)
     try:
         #recog = r.recognize_google(audio, language = 'en-US')
-        recog = r.recognize_google(audio, language = 'en-US',key="AIzaSyD4YIcs3nWlNWbFXEr1g0NiQp-hKzXmZZU")
+        recog = r.recognize_google(audio, language = 'en-US')
     
         print("You said: " + recog)
         
