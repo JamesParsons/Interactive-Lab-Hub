@@ -96,7 +96,7 @@ def getSpeech():
         print("Could not request results from Google Speech Recognition service; {0}".format(e))
  
 
-
+stopProx = 0 
 def prox():
     
    
@@ -126,7 +126,7 @@ def gesture():
             return 2
      
         
-stopProx = 0 
+
 while True:
     
     
