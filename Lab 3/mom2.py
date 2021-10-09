@@ -102,12 +102,15 @@ def getSpeech():
 
 def prox():
     
+    apds.enable_proximity = True
+    apds.proximity_interrupt_threshold = (0, 250)
+    apds.enable_proximity_interrupt = True    
     
     if apds.proximity >= 50:
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
-        apds.end()
+        #apds.end()
 
    
  
