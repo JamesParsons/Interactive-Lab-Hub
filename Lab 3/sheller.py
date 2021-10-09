@@ -18,6 +18,8 @@ result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
 
 print(result)
 
+if "dinner" in result:
+    print("found dinner")
 
 
 # converting the shell to python gotten from:
