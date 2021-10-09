@@ -99,17 +99,17 @@ def getSpeech():
 
 def prox():
     
-    stopProx = 0
+   
     print(apds.proximity, " ", stopProx)
     #apds.clear_interrupt()    
-    while stopProx == 0:
-        print("inside stopprox =", stopProx, "   ", apds.proximity)
-        if apds.proximity >= 50 and stopProx == 0:
-            stopProx = 1
-            print("You want a hug?")
-            engine.say("Come get a hug")
-            engine.runAndWait() 
-            apds.clear_interrupt() 
+    #while stopProx == 0:
+        #print("inside stopprox =", stopProx, "   ", apds.proximity)
+    if apds.proximity >= 50 and stopProx == 0:
+        stopProx = 1
+        #print("You want a hug?")
+        engine.say("Come get a hug")
+        engine.runAndWait() 
+        apds.clear_interrupt() 
    
     
 
@@ -126,10 +126,10 @@ def gesture():
             return 2
      
         
- 
+stopProx = 0 
 while True:
     
-   
+    
     prox()   
     #getSpeech()
     #gesture()
