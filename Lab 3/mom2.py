@@ -87,7 +87,8 @@ def getSpeech():
         #audio = r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
     try:
-        recog = r.recognize_google(audio, language = 'en-US')
+        #recog = r.recognize_google(audio, language = 'en-US')
+        recog = r.recognize_google(audio, language = 'en-US',key="AIzaSyD4YIcs3nWlNWbFXEr1g0NiQp-hKzXmZZU")
     
         print("You said: " + recog)
         
@@ -101,16 +102,13 @@ def getSpeech():
 
 
 def prox():
-    
-    apds.enable_proximity = True
-    apds.proximity_interrupt_threshold = (0, 250)
-    apds.enable_proximity_interrupt = True    
+       
     
     if apds.proximity >= 50:
         print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
-        #apds.end()
+        apds.end()
 
    
  
@@ -124,7 +122,8 @@ while True:
     #gesture = apds.gesture()
     #print('Saw gesture: {0}'.format(gesture))  
     
-  
+
+# AIzaSyD4YIcs3nWlNWbFXEr1g0NiQp-hKzXmZZU
  
  
 
