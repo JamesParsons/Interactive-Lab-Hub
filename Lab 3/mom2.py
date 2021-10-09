@@ -101,9 +101,9 @@ def prox():
     
     stopProx = 0
     print(apds.proximity, " ", stopProx)
-    apds.clear_interrupt()    
+    #apds.clear_interrupt()    
     while stopProx == 0:
-        print("inside stopprox =", stopProx)
+        print("inside stopprox =", stopProx, "   ", apds.proximity)
         if apds.proximity >= 50 and apds.proximity <= 100:
             print("You want a hug?")
             engine.say("Come get a hug")
