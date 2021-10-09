@@ -99,9 +99,9 @@ def getSpeech():
 
 def prox():
     
+    stopProx = 0
     print(apds.proximity, " ", stopProx)
     apds.clear_interrupt()    
-    stopProx = 0
     while stopProx == 0:
         if apds.proximity >= 50 and apds.proximity <= 100:
             print("You want a hug?")
