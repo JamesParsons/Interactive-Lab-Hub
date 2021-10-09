@@ -27,7 +27,7 @@ def getSpeech():
         #audio = r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
     try:
-        recog = r.recognize_google(audio, language = 'en-US')
+        recog = r.recognize_google(audio, language = 'en-US',key="AIzaSyD4YIcs3nWlNWbFXEr1g0NiQp-hKzXmZZU")
     
         print("You said: " + recog)
         findResponse(recog)
