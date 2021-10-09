@@ -40,6 +40,7 @@ gesture = apds.gesture()
 def findResponse(spoken):
     
     resp = ""
+    meat  = ""
     
     if "goodbye" in spoken:
         print("Goodbye honey")
@@ -59,7 +60,29 @@ def findResponse(spoken):
         #engine.say("Dear")
         #engine.runAndWait()        
         resp = resp + " " + "dear"
-          
+        
+    if "quiz" in spoken or "test" in spoken:
+        print("I'm sure you will do better next time")
+        meat = "I am sure you will do better next time"
+        
+    if "tired" in spoken:
+        print("Did you not sleep well?")
+        meat = "Did you not sleep well?"
+        
+    if "sad" in spoken:
+        print("I am sorry.   I will bake you some cookies")
+        meat = "I am sorry.  I will bake you some cookies"
+        
+    if "good" in spoken:
+        print("Would you like a warm glass of milk?")
+        meat = "Would you like a warm glass of milk?"
+        
+    if "no" in spoken:
+        meat = "ok"
+        
+    if "yes" in spoken:
+        meat = "ok"          
+              
     if "dinner" is spoken:
         resp = "What would you like?  swipe up for pizza and down for chicken"
         engine.say(resp)
@@ -70,8 +93,10 @@ def findResponse(spoken):
             resp = "Pizza is on the way"
         elif choice == 4:
             resp = "Chicken will be delicious"
+            
+    speech = resp + " " + meat
         
-    engine.say(resp)
+    engine.say(speech)
     engine.runAndWait()    
   
     
@@ -100,13 +125,10 @@ def getSpeech():
 def prox():
     
     global stopProx
-    print(apds.proximity, " ", stopProx)
-    #apds.clear_interrupt()    
-    #while stopProx == 0:
-        #print("inside stopprox =", stopProx, "   ", apds.proximity)
+    #print(apds.proximity, " ", stopProx)
     if apds.proximity >= 50 and stopProx == 0:
         stopProx = 1
-        #print("You want a hug?")
+        print("You want a hug?")
         engine.say("Come get a hug")
         engine.runAndWait() 
         apds.clear_interrupt() 
@@ -133,7 +155,7 @@ while True:
         prox()  
     else:
         exit()
-    #getSpeech()
+    getSpeech()
     #gesture()
 
 
