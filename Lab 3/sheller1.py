@@ -12,8 +12,7 @@ result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
 
 print("result =", result)
 
-for key, value in result:
-    print(key, " ", value)
+print(result["text"])
 
 
 # converting the shell to python gotten from:
