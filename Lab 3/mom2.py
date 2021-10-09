@@ -68,15 +68,13 @@ def findResponse(spoken):
         resp = "What would you like?  swipe up for pizza and down for chicken"
         engine.say(resp)
         engine.runAndWait()
-        gesture = apds.gesture()
-        print('Saw gesture: {0}'.format(gesture)) 
-        
-        if gesture == 1:
-            engine.say("Pizza it is")
-            engine.runAndWait()
-        elif gesture == 2:
-            engine.say("Chicken will be yummy")
-            engine.runAndWait()            
+        choice = gesture()
+        print("Choice returned: ", choice)
+        if choice == 2:
+            engine.say("Ok pizza it is!")
+        elif choice == 4:
+            engine.say("Chicken will be delicious")
+        engine.runAndWait()
   
     
 
@@ -84,7 +82,7 @@ def getSpeech():
 
     with speech as source:
         print("say something!…")
-        #audio = r.adjust_for_ambient_noise(source)
+        audio = r.adjust_for_ambient_noise(source)
         audio = r.listen(source)
     try:
         #recog = r.recognize_google(audio, language = 'en-US')
@@ -112,8 +110,15 @@ def prox():
 
 
 def gesture():
+    while True:
         gesture = apds.gesture()
-        print('Saw gesture: {0}'.format(gesture))     
+        print('Saw gesture: {0}'.format(gesture)) 
+        if gesture == 4:
+            print("ok pizza it is!")
+            return 4
+        elif gesture == 2:
+            print("Time for some yummy chicken")
+            return 2
      
         
  
@@ -121,8 +126,12 @@ while True:
     
    
     #prox()   
-    #getSpeech()
-    gesture()
+    getSpeech()
+    #gesture()
+
+
+
+
     
     #gesture = apds.gesture()
     #print('Saw gesture: {0}'.format(gesture))  
