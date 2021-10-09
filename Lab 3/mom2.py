@@ -130,7 +130,9 @@ stopProx = 0
 while True:
     
     if stopProx == 0:
-        prox()   
+        prox()  
+    else:
+        exit()
     #getSpeech()
     #gesture()
 
