@@ -110,15 +110,20 @@ def prox():
         engine.runAndWait() 
         apds.end()
 
-   
- 
+
+def gesture():
+        gesture = apds.gesture()
+        print('Saw gesture: {0}'.format(gesture))     
+     
         
  
 while True:
     
    
-    prox()   
+    #prox()   
     #getSpeech()
+    gesture()
+    
     #gesture = apds.gesture()
     #print('Saw gesture: {0}'.format(gesture))  
     
