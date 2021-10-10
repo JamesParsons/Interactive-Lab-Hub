@@ -30,6 +30,6 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 print("type = ", type(rec.FinalResult))
-print("in test_words2 ", dir(rec.FinalResult))
+print("in test_words2 ", rec.Result())
 
 
