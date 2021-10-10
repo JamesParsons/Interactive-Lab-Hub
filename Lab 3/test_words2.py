@@ -25,11 +25,11 @@ while True:
         break
     if rec.AcceptWaveform(data):
         print(rec.Result())
-    else:
-        print(rec.PartialResult())
+    #else:
+        #print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
 print("type = ", type(rec.FinalResult))
 print("in test_words2 ", dir(rec.FinalResult))
-print(decode(rec.FinalResult))
+
 
