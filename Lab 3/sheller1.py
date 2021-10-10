@@ -18,7 +18,7 @@ print("stdout= ", type(result.stdout))n
 
 print(" type = ", type(result))
 
-print("result part = ", result[0])
+print("result part = ", result.text)
 
 
 # converting the shell to python gotten from:
