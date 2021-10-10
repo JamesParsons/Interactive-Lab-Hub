@@ -18,6 +18,8 @@ print("stdout= ", type(result.stdout))n
 
 print(" type = ", type(result))
 
+print("result part = ", result[0])
+
 
 # converting the shell to python gotten from:
 # https://codefather.tech/blog/shell-command-python/#:~:text=There%20are%20multiple%20ways%20to%20execute%20a%20shell,to%20standard%20output%2C%20standard%20error%20and%20command%20piping.
