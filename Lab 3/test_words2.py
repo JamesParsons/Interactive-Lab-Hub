@@ -25,8 +25,8 @@ while True:
         break
     if rec.AcceptWaveform(data):
         print("this! ", rec.Result())
-        if "dinner" in rec.Result():
-            print("dinner")
+        #if "dinner" in rec.Result():
+            #print("dinner")
 
     #else:
         #print(rec.PartialResult())
