@@ -18,7 +18,7 @@ print("stdout= ", type(result.stdout))
 
 print(" type = ", type(result))
 
-print("result part = ", result.FinalResult())
+#print("result part = ", result.FinalResult())
 print(rec.FinalResult())
 
 
