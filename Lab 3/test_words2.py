@@ -26,7 +26,7 @@ while True:
     if rec.AcceptWaveform(data):
         print("this! ", rec.Result())
         if "text" in rec.Result():
-            print(rec.Result()["text"])
+            print("text .. maybe")
 
     #else:
         #print(rec.PartialResult())
