@@ -20,10 +20,10 @@ print("stdout= ", type(result.stdout))
 print(" type = ", type(result))
 
 #print("result part = ", result.FinalResult())
-#print("result = ", result.text)
+print("result = ", result["text"])
 
-for key, value in result:
-    print(key, value)
+#for key, value in result:
+    #print(key, value)
 
 
 # converting the shell to python gotten from:
