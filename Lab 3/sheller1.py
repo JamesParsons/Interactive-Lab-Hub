@@ -19,7 +19,7 @@ print("stdout= ", type(result.stdout))
 print(" type = ", type(result))
 
 #print("result part = ", result.FinalResult())
-print(rec.FinalResult())
+print("result = ", result.text)
 
 
 # converting the shell to python gotten from:
