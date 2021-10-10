@@ -28,4 +28,4 @@ while True:
     else:
         print(rec.PartialResult())
 
-print(rec.FinalResult())
+print("from test_words2 ", rec.FinalResult())
