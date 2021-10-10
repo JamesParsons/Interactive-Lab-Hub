@@ -30,7 +30,5 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 print("type = ", type(rec.FinalResult))
-#print("in test_words2 ", rec.FinalResult["text"])
+print("in test_words2 ", dir(rec.FinalResult))
 
-if "dinner" in rec.FinalResult():
-    print("found dinner")
