@@ -10,14 +10,16 @@ subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d
 #result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
 
 result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
-print("newline = ", subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'], universal_newlines=True))
+res2 = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'], capture_output=True))
 
-print("result =", result)
-print("stdout= ", type(result.stdout))
+print(res2)
+
+#print("result =", result)
+#print("stdout= ", type(result.stdout))
 
 #print(result["text"])
 
-print(" type = ", type(result))
+#print(" type = ", type(result))
 
 #print("result part = ", result.FinalResult())
 #print("result = ", result["text"])
