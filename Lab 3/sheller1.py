@@ -10,6 +10,7 @@ subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d
 #result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
 
 result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
+print(subprocess.getoutput(['python3', 'test_words2.py', 'recorded_mono.wav']))
 
 print("result =", result)
 print("stdout= ", type(result.stdout))
