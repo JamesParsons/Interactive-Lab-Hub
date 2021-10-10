@@ -16,7 +16,7 @@ if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE
 
 model = Model("model")
 # You can also specify the possible word list
-rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom dinner quiz test sad feeling blue tonight pizza hamburger hi what is for tonight or i feel failed my but did ok took today", "[unk]"]')
+rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom dinner quiz test sad feeling blue tonight pizza hamburger hi what is for tonight or feel failed my but did ok took today", "[unk]"]')
 #rec = KaldiRecognizer(model, wf.getframerate(), '["oh one two three four five six seven eight nine zero", "[unk]"]')
 
 while True:
@@ -29,3 +29,5 @@ while True:
         print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
+for key, value in rec.FinalResult():
+    print(key, " ", value)
