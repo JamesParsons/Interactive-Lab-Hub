@@ -25,8 +25,8 @@ while True:
         break
     if rec.AcceptWaveform(data):
         print("this! ", rec.Result())
-        for x in rec.Result():
-            print("dicting: ", x)
+        print("maybe ", rec.Result()["text"])
+
     #else:
         #print(rec.PartialResult())
 
