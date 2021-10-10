@@ -18,7 +18,8 @@ print("stdout= ", type(result.stdout))n
 
 print(" type = ", type(result))
 
-print("result part = ", result.text)
+print("result part = ", result.FinalResult())
+print(rec.FinalResult())
 
 
 # converting the shell to python gotten from:
