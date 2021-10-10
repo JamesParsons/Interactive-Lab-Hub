@@ -29,5 +29,4 @@ while True:
         print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
-for key, value in rec.FinalResult():
-    print(key, " ", value)
+print("type = ", type(rec.FinalResult))
