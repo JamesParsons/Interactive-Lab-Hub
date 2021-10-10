@@ -13,7 +13,7 @@ result = subprocess.run(['python3', 'test_words2.py', 'recorded_mono.wav'])
 
 
 print("result =", result)
-#print("stdout= ", type(result.stdout))
+print("result stdout = ", result.stdout)
 
 #print(result["text"])
 
