@@ -5,9 +5,6 @@ import sys
 import os
 import wave
 import json
-import pyttsx3
-
-engine = pyttsx3.init()
 
 if not os.path.exists("model"):
     print ("Please download the model from https://github.com/alphacep/vosk-api/blob/master/doc/models.md and unpack as 'model' in the current folder.")
@@ -22,13 +19,6 @@ model = Model("model")
 # You can also specify the possible word list
 rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom tonight dinner sad quiz test sad dinner", "[unk]"]')
 
-# RATE
-rate = engine.getProperty('rate')
-engine.setProperty('rate', 125)   # slower is lower number
-
-# VOICE
-voices = engine.getProperty('voices')
-engine.setProperty('voice', 'english_rp+f4')
 
 
 while True:
@@ -45,26 +35,24 @@ while True:
 #engine.say("Howdy partner")
 #engine.runAndWait()  
 
-#resp = ""
+resp = ""
 
-#try:
-    #if resulter: 
-        ##print("resulter = ", resulter)
+try:
+    if resulter: 
+        #print("resulter = ", resulter)
         
-        #for item in resulter:
-            ##print("resulter[item]", resulter[item])
-            #if "dinner" in resulter[item]:
-                ##print("Found Dinner!!!!!")
-                #resp = "What would you like for dinner?"
-            #if "mom" in resulter[item]:
-                ##print("!!!!!!!!!!!!!mom!!!!!!!")
-                #resp = "Hi honey" + resp
-        #engine.say(resp)
-        #engine.runAndWait()         
-    #else:
-        ##print("no resulter")
-#except:
-    #print("no resulter")
+        for item in resulter:
+            #print("resulter[item]", resulter[item])
+            if "dinner" in resulter[item]:
+                print("Found Dinner!!!!!")
+                resp = "What would you like for dinner?"
+            if "mom" in resulter[item]:
+                print("!!!!!!!!!!!!!mom!!!!!!!")
+                resp = "Hi honey" + resp       
+    else:
+        print("no resulter")
+except:
+    print("no resulter")
 #print("maybe = ", resulter[1])
 
 #engine.say("Howdy partner")
