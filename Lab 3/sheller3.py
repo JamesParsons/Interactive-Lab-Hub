@@ -17,3 +17,6 @@ print("result =", result)
 #print("type stdout = ", type(result.stdout.decode()))
 strout = result.stdout.decode()
 print("strout =", strout)
+
+if "dinner" in strout:
+    print("strout has dinner")
