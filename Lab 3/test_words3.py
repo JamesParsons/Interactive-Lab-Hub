@@ -67,6 +67,6 @@ except:
     print("no resulter")
 #print("maybe = ", resulter[1])
 
-#engine.say("Howdy partner")
-#engine.runAndWait()  
+engine.say("Howdy partner")
+engine.runAndWait()  
 
