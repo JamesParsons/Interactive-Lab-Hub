@@ -1,4 +1,4 @@
-from subprocess import Popen, PIPE, STDOUT
-
-text = u"René Descartes"
-p = Popen(['espeak', '-b', '1'], stdin=PIPE, stderr=STDOUT)
+import subprocess
+text = 'Hello World.'
+print(text)
+subprocess.call(['espeak', text], stderr=subprocess.DEVNULL)
