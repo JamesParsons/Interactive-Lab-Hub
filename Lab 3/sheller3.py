@@ -13,5 +13,4 @@ print("result =", result)
 print("type result ", type(result))
 print("sub ", subprocess.CompletedProcess)
 
-if "dinner" in result:
-    print("sheller3 found dinner")
+result.stdout.decode(“utf-8”)
