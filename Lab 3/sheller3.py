@@ -53,7 +53,7 @@ if "class" in strout:
     print("Make sure to get some good sleep for tomorrow")
     reply = "Make sure to get some good sleep for tomorrow"
     subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
-subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL
+subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
     
     
     
@@ -61,4 +61,4 @@ subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.
 # https://codefather.tech/blog/shell-command-python/#:~:text=There%20are%20multiple%20ways%20to%20execute%20a%20shell,to%20standard%20output%2C%20standard%20error%20and%20command%20piping.
     
 # espeak implementation from:
-# https://stackoverflow.com/questions/11269575/how-to-hide-output-of-subprocess/11270665#11270665
+# https://stackoverflow.com/questions/11269575/how-to-hide-output-of-subprocess/11270665#11270665 
