@@ -14,3 +14,4 @@ print("type result ", type(result))
 print("sub ", subprocess.CompletedProcess)
 
 print(" stdout = ", result.stdout.decode())
+print("type stdout = ", type(result.stdout.decode()))
