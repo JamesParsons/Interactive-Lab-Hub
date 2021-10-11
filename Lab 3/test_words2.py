@@ -41,5 +41,7 @@ if resulter:
     #print(resulter[item])
 else:
     print("no resulter")
+    
+print("maybe = ", resulter[1])
 
 
