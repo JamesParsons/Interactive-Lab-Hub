@@ -31,8 +31,7 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 
-if "dinner" in rec.FinalResult:
-    print("Dinner is served")
+
 
 
 try:
