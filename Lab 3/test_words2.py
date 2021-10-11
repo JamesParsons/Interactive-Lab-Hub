@@ -35,9 +35,8 @@ while True:
         #print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
-#resulter = rec.FinalResult()
-#print("resulter = ", resulter)
 print("type = ", type(rec.FinalResult))
-#print("in test_words2 ", rec.Result())
+print("json ", json.loads(rec.FinalResults()))
+
 
 
