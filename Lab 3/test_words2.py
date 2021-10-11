@@ -32,19 +32,20 @@ while True:
 print("from test_words2 ", rec.FinalResult())
 
 
-
-if resulter: 
-    print("resulter = ", resulter)
-    
-    for item in resulter:
-        print("resulter[item]", resulter[item])
-    if "dinner" in resulter[item]:
-        print("Found Dinner!!!!!")
-    if "mom" in resulter[item]:
-        print("!!!!!!!!!!!!!mom!!!!!!!")
-else:
+try:
+    if resulter: 
+        print("resulter = ", resulter)
+        
+        for item in resulter:
+            print("resulter[item]", resulter[item])
+        if "dinner" in resulter[item]:
+            print("Found Dinner!!!!!")
+        if "mom" in resulter[item]:
+            print("!!!!!!!!!!!!!mom!!!!!!!")
+    else:
+        print("no resulter")
+except:
     print("no resulter")
-    
 #print("maybe = ", resulter[1])
 
 
