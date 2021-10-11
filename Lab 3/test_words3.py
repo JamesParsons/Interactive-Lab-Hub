@@ -55,7 +55,8 @@ try:
             print("resulter[item]", resulter[item])
         if "dinner" in resulter[item]:
             print("Found Dinner!!!!!")
-            resp = "What would you like for dinner?"            
+            resp = "What would you like for dinner?"
+            return "dinner"
         if "mom" in resulter[item]:
             print("!!!!!!!!!!!!!mom!!!!!!!")
             resp = "Hi honey" + resp
