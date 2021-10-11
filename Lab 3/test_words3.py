@@ -45,10 +45,8 @@ try:
             #print("resulter[item]", resulter[item])
             if "dinner" in resulter[item]:
                 print("dinner")
-                resp = "What would you like for dinner?"
             if "mom" in resulter[item]:
-                print("!!!!!!!!!!!!!mom!!!!!!!")
-                resp = "Hi honey" + resp       
+                print("mom")       
     else:
         print("no resulter")
 except:

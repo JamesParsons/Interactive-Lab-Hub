@@ -38,11 +38,7 @@ if strout == "dinner":
     print("strout has dinner")
     reply = "What would you  like for dinner?"
     subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
-    #engine.say("hey")
-    #espeak -ven+f2 -k5 -s150 --stdout  "I can make the Pi say anything at all" | aplay
-    
-    
-#engine.say(reply)
-#engine.runAndWait()
-    
-    
+if strout == "mom":
+    print("strout has mom")
+    reply = "Hi honey"
+    subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
