@@ -23,7 +23,7 @@ subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d
 result = subprocess.run(['python3', 'test_words3.py', 'recorded_mono.wav'], capture_output=True)
     #sleep()
 
-print("result =", result)
+#print("result =", result)
 #print("type result ", type(result))
 #print("sub ", subprocess.CompletedProcess)
 
