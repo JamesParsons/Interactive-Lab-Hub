@@ -25,14 +25,16 @@ while True:
         break
     if rec.AcceptWaveform(data):
         #print("this! ", rec.Result())
-        if "dinner" in rec.Result():
-            print("dinner")
+        for key, value in rec.Result():
+            print(key, " " , value)
+        #if "dinner" in rec.Result():
+            #print("dinner")
 
     #else:
         #print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
-print("type = ", type(rec.FinalResult))
-print("in test_words2 ", rec.Result())
+#print("type = ", type(rec.FinalResult))
+#print("in test_words2 ", rec.Result())
 
 
