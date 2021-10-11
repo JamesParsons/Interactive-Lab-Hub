@@ -38,9 +38,9 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 #print("type = ", type(rec.FinalResult))
-print("resulter ", resulter)
+print("resulter = ", resulter)
 
-for item in resulter[0]:
-    print(resulter[item]["word"])
+for item in resulter:
+    print(resulter[item])
 
 
