@@ -39,12 +39,8 @@ while True:
 print("from test_words2 ", rec.FinalResult())
 #print("type = ", type(rec.FinalResult))
 print("resulter ", resulter)
-print("dict try ", resulter["result"]["word"])
-if resulter:
-    for key, value in resulter:
-        print(key, " ", value)
-else:
-    print("resulter didnt work")
 
+for item in resulter[0]:
+    print(resulter[item]["word"])
 
 
