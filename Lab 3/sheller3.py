@@ -1,8 +1,22 @@
 import os
 import subprocess
 from time import sleep
+from vosk import Model, KaldiRecognizer
+import sys
+import os
+import wave
+import json
+import pyttsx3
 
+engine = pyttsx3.init()
 
+# RATE
+rate = engine.getProperty('rate')
+engine.setProperty('rate', 125)   # slower is lower number
+
+# VOICE
+voices = engine.getProperty('voices')
+engine.setProperty('voice', 'english_rp+f4')
 
 #while True:
 subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d', '5', '-t', 'wav', 'recorded_mono.wav'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -18,5 +32,15 @@ print("result =", result)
 strout = result.stdout.decode()
 print("strout =", strout)
 
+reply = ""
+
 if "dinner" in strout:
     print("strout has dinner")
+    reply = "What would you  like for dinner?"
+    
+    
+    
+engine.say(reply)
+engine.runAndWait()
+    
+    
