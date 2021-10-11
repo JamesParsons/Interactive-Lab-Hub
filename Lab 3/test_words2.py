@@ -33,8 +33,8 @@ print("from test_words2 ", rec.FinalResult())
 
 
 
-#if resulter: 
-    #print("resulter = ", resulter)
+if resulter: 
+    print("resulter = ", resulter)
     
     #for item in resulter:
         #for thing in item:
