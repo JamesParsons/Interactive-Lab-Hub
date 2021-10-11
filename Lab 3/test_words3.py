@@ -42,6 +42,8 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 
+engine.say("Howdy partner")
+engine.runAndWait()  
 
 resp = ""
 
