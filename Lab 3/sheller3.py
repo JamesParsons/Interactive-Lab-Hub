@@ -33,11 +33,12 @@ strout = result.stdout.decode()
 print("strout =", strout)
 
 reply = ""
+#-ven+f2 -k5 -s150
 
 if  "dinner" in strout:
     print("strout has dinner")
     reply = "What would you  like for dinner?"
-    subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
 if "mom" in strout:
     print("strout has mom")
     reply = "Hi honey"
