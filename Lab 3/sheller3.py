@@ -34,11 +34,11 @@ print("strout =", strout)
 
 reply = ""
 
-if strout == "dinner":
+if  "dinner" in strout:
     print("strout has dinner")
     reply = "What would you  like for dinner?"
     subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
-if strout == "mom":
+if "mom" in strout:
     print("strout has mom")
     reply = "Hi honey"
     subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
