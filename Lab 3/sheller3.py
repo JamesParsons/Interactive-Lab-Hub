@@ -10,8 +10,10 @@ result = subprocess.run(['python3', 'test_words3.py', 'recorded_mono.wav'], capt
     #sleep()
 
 print("result =", result)
-print("type result ", type(result))
-print("sub ", subprocess.CompletedProcess)
+#print("type result ", type(result))
+#print("sub ", subprocess.CompletedProcess)
 
-print(" stdout = ", result.stdout.decode())
-print("type stdout = ", type(result.stdout.decode()))
+#print(" stdout = ", result.stdout.decode())
+#print("type stdout = ", type(result.stdout.decode()))
+strout = result.stdout.decode()
+print(strout)
