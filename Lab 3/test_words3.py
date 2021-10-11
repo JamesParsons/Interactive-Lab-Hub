@@ -44,7 +44,7 @@ try:
         for item in resulter:
             #print("resulter[item]", resulter[item])
             if "dinner" in resulter[item]:
-                print("Found Dinner!!!!!")
+                print("dinner")
                 resp = "What would you like for dinner?"
             if "mom" in resulter[item]:
                 print("!!!!!!!!!!!!!mom!!!!!!!")
