@@ -18,7 +18,7 @@ if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE
 model = Model("model")
 # You can also specify the possible word list
 rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom dinner", "[unk]"]')
-#rec = KaldiRecognizer(model, wf.getframerate(), '["oh one two three four five six seven eight nine zero", "[unk]"]')
+
 
 while True:
     data = wf.readframes(4000)
@@ -26,25 +26,18 @@ while True:
         break
     if rec.AcceptWaveform(data):
         resulter = json.loads(rec.Result())
-        print("this! ", rec.Result())
-        #print(resulter["text"])
-        
-        #print(rec.Result())
-        #if "dinner" in rec.Result():
-            #print("dinner")
-
-    #else:
-        #print(rec.PartialResult())
+        print("!!!!!this! ", rec.Result())
+   
 
 print("from test_words2 ", rec.FinalResult())
-#print("type = ", type(rec.FinalResult))
+
 
 if resulter: 
     print("resulter = ", resulter)
     
     for item in resulter:
-        for thing in item:
-            print("thing = ", thing)
+        #for thing in item:
+        print("item = ", item)
     #print(resulter[item])
 else:
     print("no resulter")
