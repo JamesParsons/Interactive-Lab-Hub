@@ -1,4 +1,4 @@
-from espeakng import ESpeakNG
+from subprocess import Popen, PIPE, STDOUT
 
-esng = ESpeakNG() 
-esng.say("Hello World!")
+text = u"René Descartes"
+p = Popen(['espeak', '-b', '1'], stdin=PIPE, stdout=DEVNULL, stderr=STDOUT)
