@@ -40,6 +40,8 @@ if resulter:
         for thing in item:
             print("thing ", thing)
     print("resulter[item]", resulter[item])
+    if "dinner" in resulter[item]:
+        print("Found Dinner!!!!!")
 else:
     print("no resulter")
     
