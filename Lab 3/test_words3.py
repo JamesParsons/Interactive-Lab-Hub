@@ -40,33 +40,33 @@ while True:
         #print("!!!!!this! ", rec.Result())
    
 
-print("from test_words2 ", rec.FinalResult())
+#print("from test_words2 ", rec.FinalResult())
 
-engine.say("Howdy partner")
-engine.runAndWait()  
+#engine.say("Howdy partner")
+#engine.runAndWait()  
 
 resp = ""
 
 try:
     if resulter: 
-        print("resulter = ", resulter)
+        #print("resulter = ", resulter)
         
         for item in resulter:
-            print("resulter[item]", resulter[item])
-        if "dinner" in resulter[item]:
-            print("Found Dinner!!!!!")
-            resp = "What would you like for dinner?"
-        if "mom" in resulter[item]:
-            print("!!!!!!!!!!!!!mom!!!!!!!")
-            resp = "Hi honey" + resp
+            #print("resulter[item]", resulter[item])
+            if "dinner" in resulter[item]:
+                #print("Found Dinner!!!!!")
+                resp = "What would you like for dinner?"
+            if "mom" in resulter[item]:
+                #print("!!!!!!!!!!!!!mom!!!!!!!")
+                resp = "Hi honey" + resp
         engine.say(resp)
         engine.runAndWait()         
     else:
-        print("no resulter")
+        #print("no resulter")
 except:
     print("no resulter")
 #print("maybe = ", resulter[1])
 
-engine.say("Howdy partner")
-engine.runAndWait()  
+#engine.say("Howdy partner")
+#engine.runAndWait()  
 
