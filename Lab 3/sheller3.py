@@ -28,31 +28,25 @@ reply = ""
 if  "dinner" in strout:
     print("strout has dinner")
     reply = "What would you  like for dinner?"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
 if "mom" in strout:
     print("Hi honey")
     reply = "Hi honey"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
 if "quiz" in strout:
     print("I am sure you will do better next time if you study")
     reply = "HI am sure you will do better next time if you study"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
 if "test" in strout:
     print("I am sure you will do better next time if you study")
     reply = "I am sure you will do better next time if you study"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
 if "sad" in strout:
     print("I will get you some milk and cookies")
-    reply = "I will get you some milk and cookies"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
+    reply = "I will get you some milk and cookies"   
 if "party" in strout:
     print("That sounds fun")
-    reply = "That sounds fun"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)       
+    reply = "That sounds fun" 
 if "class" in strout:
     print("Make sure to get some good sleep for tomorrow")
     reply = "Make sure to get some good sleep for tomorrow"
-    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
+    
 subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
     
     
