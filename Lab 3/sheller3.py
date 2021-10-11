@@ -6,17 +6,7 @@ import sys
 import os
 import wave
 import json
-import pyttsx3
 
-engine = pyttsx3.init()
-
-# RATE
-rate = engine.getProperty('rate')
-engine.setProperty('rate', 125)   # slower is lower number
-
-# VOICE
-voices = engine.getProperty('voices')
-engine.setProperty('voice', 'english_rp+f4')
 
 #while True:
 subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d', '5', '-t', 'wav', 'recorded_mono.wav'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -33,13 +23,42 @@ strout = result.stdout.decode()
 print("strout =", strout)
 
 reply = ""
-#-ven+f2 -k5 -s150
+
 
 if  "dinner" in strout:
     print("strout has dinner")
     reply = "What would you  like for dinner?"
     subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
 if "mom" in strout:
-    print("strout has mom")
+    print("Hi honey")
     reply = "Hi honey"
-    subprocess.call(['espeak', reply], stderr=subprocess.DEVNULL)
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
+if "quiz" in strout:
+    print("I am sure you will do better next time if you study")
+    reply = "HI am sure you will do better next time if you study"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
+if "test" in strout:
+    print("I am sure you will do better next time if you study")
+    reply = "I am sure you will do better next time if you study"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
+if "sad" in strout:
+    print("I will get you some milk and cookies")
+    reply = "I will get you some milk and cookies"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
+if "party" in strout:
+    print("That sounds fun")
+    reply = "That sounds fun"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)       
+if "class" in strout:
+    print("Make sure to get some good sleep for tomorrow")
+    reply = "Make sure to get some good sleep for tomorrow"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)    
+subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL
+    
+    
+    
+# converting the shell to python gotten from:
+# https://codefather.tech/blog/shell-command-python/#:~:text=There%20are%20multiple%20ways%20to%20execute%20a%20shell,to%20standard%20output%2C%20standard%20error%20and%20command%20piping.
+    
+# espeak implementation from:
+# https://stackoverflow.com/questions/11269575/how-to-hide-output-of-subprocess/11270665#11270665

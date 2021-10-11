@@ -17,7 +17,7 @@ if wf.getnchannels() != 1 or wf.getsampwidth() != 2 or wf.getcomptype() != "NONE
 
 model = Model("model")
 # You can also specify the possible word list
-rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom tonight dinner sad quiz test sad dinner", "[unk]"]')
+rec = KaldiRecognizer(model, wf.getframerate(),'["hello howdy mom tonight dinner sad quiz party class test sad dinner", "[unk]"]')
 
 
 
@@ -46,7 +46,17 @@ try:
             if "dinner" in resulter[item]:
                 print("dinner")
             if "mom" in resulter[item]:
-                print("mom")       
+                print("mom")   
+            if "sad" in resulter[item]:
+                print("sad")
+            if "quiz" in resulter[item]:
+                print("quiz")
+            if "test" in resulter[item]:
+                print("test")
+            if "class" in resulter[item]:
+                print("class")   
+            if "party" in resulter[item]:
+                print("party")
     else:
         print("no resulter")
 except:
