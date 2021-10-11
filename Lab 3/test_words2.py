@@ -36,8 +36,8 @@ if resulter:
     print("resulter = ", resulter)
     
     for item in resulter:
-        #for thing in item:
-        print("item = ", item)
+        for thing in item:
+            print("thing ", thing)
     #print(resulter[item])
 else:
     print("no resulter")
