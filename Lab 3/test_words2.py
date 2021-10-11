@@ -42,6 +42,8 @@ if resulter:
     print("resulter[item]", resulter[item])
     if "dinner" in resulter[item]:
         print("Found Dinner!!!!!")
+    if "mom" in resulter[item]:
+        print("!!!!!!!!!!!!!mom!!!!!!!")
 else:
     print("no resulter")
     
