@@ -37,9 +37,7 @@ if resulter:
     print("resulter = ", resulter)
     
     for item in resulter:
-        for thing in item:
-            print("thing ", thing)
-    print("resulter[item]", resulter[item])
+        print("resulter[item]", resulter[item])
     if "dinner" in resulter[item]:
         print("Found Dinner!!!!!")
     if "mom" in resulter[item]:
