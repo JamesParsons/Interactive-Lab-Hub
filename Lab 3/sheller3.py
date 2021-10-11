@@ -37,7 +37,7 @@ reply = ""
 if "dinner" in strout:
     print("strout has dinner")
     reply = "What would you  like for dinner?"
-    
+    engine.say("hey")
     
     
 engine.say(reply)
