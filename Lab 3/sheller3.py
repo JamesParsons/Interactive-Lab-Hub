@@ -12,3 +12,6 @@ result = subprocess.run(['python3', 'test_words3.py', 'recorded_mono.wav'], capt
 print("result =", result)
 print("type result ", type(result))
 print("sub ", subprocess.CompletedProcess)
+
+if "dinner" in result:
+    print("sheller3 found dinner")
