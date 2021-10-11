@@ -39,7 +39,7 @@ while True:
 print("from test_words2 ", rec.FinalResult())
 #print("type = ", type(rec.FinalResult))
 print("resulter ", resulter)
-print("dict try ", resulter["result"])
+print("dict try ", resulter["result"]["word"])
 
 
 
