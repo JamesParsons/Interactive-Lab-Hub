@@ -31,6 +31,7 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 
+print("type resulter", type(resulter))
 
 if resulter: 
     print("resulter = ", resulter)
