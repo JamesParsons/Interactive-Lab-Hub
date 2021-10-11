@@ -27,7 +27,7 @@ while True:
     if rec.AcceptWaveform(data):
         resulter = json.loads(rec.Result())
         print("this! ", rec.Result())
-        print(resulter["text"])
+        #print(resulter["text"])
         
         #print(rec.Result())
         #if "dinner" in rec.Result():
@@ -37,8 +37,8 @@ while True:
         #print(rec.PartialResult())
 
 print("from test_words2 ", rec.FinalResult())
-print("type = ", type(rec.FinalResult))
-#print("resulter ", resulter)
+#print("type = ", type(rec.FinalResult))
+print("resulter ", resulter)
 
 
 
