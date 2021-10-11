@@ -45,28 +45,28 @@ while True:
 #engine.say("Howdy partner")
 #engine.runAndWait()  
 
-resp = ""
+#resp = ""
 
-try:
-    if resulter: 
-        #print("resulter = ", resulter)
+#try:
+    #if resulter: 
+        ##print("resulter = ", resulter)
         
-        for item in resulter:
-            #print("resulter[item]", resulter[item])
-            if "dinner" in resulter[item]:
-                #print("Found Dinner!!!!!")
-                resp = "What would you like for dinner?"
-            if "mom" in resulter[item]:
-                #print("!!!!!!!!!!!!!mom!!!!!!!")
-                resp = "Hi honey" + resp
-        engine.say(resp)
-        engine.runAndWait()         
-    else:
-        #print("no resulter")
-except:
-    print("no resulter")
+        #for item in resulter:
+            ##print("resulter[item]", resulter[item])
+            #if "dinner" in resulter[item]:
+                ##print("Found Dinner!!!!!")
+                #resp = "What would you like for dinner?"
+            #if "mom" in resulter[item]:
+                ##print("!!!!!!!!!!!!!mom!!!!!!!")
+                #resp = "Hi honey" + resp
+        #engine.say(resp)
+        #engine.runAndWait()         
+    #else:
+        ##print("no resulter")
+#except:
+    #print("no resulter")
 #print("maybe = ", resulter[1])
 
-engine.say("Howdy partner")
-engine.runAndWait()  
+#engine.say("Howdy partner")
+#engine.runAndWait()  
 
