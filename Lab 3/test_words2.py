@@ -38,11 +38,15 @@ while True:
 
 print("from test_words2 ", rec.FinalResult())
 #print("type = ", type(rec.FinalResult))
-print("resulter = ", resulter)
 
-for item in resulter:
-    for thing in item:
-        print("thing = ", thing)
+if resulter: 
+    print("resulter = ", resulter)
+    
+    for item in resulter:
+        for thing in item:
+            print("thing = ", thing)
     #print(resulter[item])
+else:
+    print("no resulter")
 
 
