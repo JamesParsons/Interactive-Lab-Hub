@@ -41,6 +41,8 @@ print("from test_words2 ", rec.FinalResult())
 print("resulter = ", resulter)
 
 for item in resulter:
-    print(resulter[item])
+    for thing in item:
+        print("thing = ", thing)
+    #print(resulter[item])
 
 
