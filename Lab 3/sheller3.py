@@ -46,6 +46,12 @@ if "party" in strout:
 if "class" in strout:
     print("Make sure to get some good sleep for tomorrow")
     reply = "Make sure to get some good sleep for tomorrow"
+if "goodbye" in strout:
+    print("Goodbye Dear")
+    reply = "Goodbye Dear"
+if "stop" in strout:
+    print("See you later")
+    reply = "See you later"        
     
 subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
     
