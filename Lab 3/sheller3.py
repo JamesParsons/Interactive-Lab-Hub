@@ -1,6 +1,6 @@
 import os
 import subprocess
-import time
+from time import sleep
 
 
 
