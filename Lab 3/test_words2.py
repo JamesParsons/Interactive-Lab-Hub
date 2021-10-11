@@ -32,6 +32,7 @@ while True:
 print("from test_words2 ", rec.FinalResult())
 
 print("type resulter", type(resulter))
+print("second try " , resulter[0]["word"])
 
 if resulter: 
     print("resulter = ", resulter)
