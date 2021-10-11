@@ -36,16 +36,15 @@ print("from test_words2 ", rec.FinalResult())
 if resulter: 
     print("resulter = ", resulter)
     
-    #for item in resulter:
-        #for thing in item:
-            #print("thing ", thing)
-    ##print(resulter[item])
-#else:
-    #print("no resulter")
+    for item in resulter:
+        for thing in item:
+            print("thing ", thing)
+    print("resulter[item]", resulter[item])
+else:
+    print("no resulter")
     
 #print("maybe = ", resulter[1])
 
-for key, value in resulter:
-    print(key, value)
+
 
 
