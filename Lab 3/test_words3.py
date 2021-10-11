@@ -56,7 +56,6 @@ try:
         if "dinner" in resulter[item]:
             print("Found Dinner!!!!!")
             resp = "What would you like for dinner?"
-            return "dinner"
         if "mom" in resulter[item]:
             print("!!!!!!!!!!!!!mom!!!!!!!")
             resp = "Hi honey" + resp
@@ -67,3 +66,7 @@ try:
 except:
     print("no resulter")
 #print("maybe = ", resulter[1])
+
+engine.say("Howdy partner")
+engine.runAndWait()  
+
