@@ -52,7 +52,7 @@ if  "dinner" in strout:
     while gesture == 0:
         gesture = apds.gesture()
     print('Saw gesture: {0}'.format(gesture))
-    if gesture == 1 or gesture == 2:
+    if gesture == 3 or gesture == 4:
         print("Pizza it is")
         reply = "Pizza it is"
     else:
