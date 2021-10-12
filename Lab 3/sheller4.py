@@ -23,9 +23,9 @@ apds.enable_color = True
 apds.enable_gesture = True
 gesture = apds.gesture()
 
-while gesture == 0:
-    gesture = apds.gesture()
-print('Saw gesture: {0}'.format(gesture))
+#while gesture == 0:
+    #gesture = apds.gesture()
+#print('Saw gesture: {0}'.format(gesture))
 
 
 #while True:
@@ -47,7 +47,16 @@ reply = ""
 
 if  "dinner" in strout:
     print("strout has dinner")
-    reply = "What would you  like for dinner?"
+    reply = "Swipe up and down for pizza, side to side for hamburgers"
+    while gesture == 0:
+        gesture = apds.gesture()
+    print('Saw gesture: {0}'.format(gesture))
+    if gesture == 1:
+        print("Pizza it is")
+        reply = "Pizza it is"
+    if gesture == 3:
+        print("Ok ill make hamburgers")
+        reply = "Ok I will make hamburgers"
 if "mom" in strout:
     print("Hi honey")
     reply = "Hi honey"
@@ -71,7 +80,8 @@ if "goodbye" in strout:
     reply = "Goodbye Dear"
 if "stop" in strout:
     print("See you later")
-    reply = "See you later"        
+    reply = "See you later" 
+    
     
 subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
     
