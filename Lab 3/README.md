@@ -146,7 +146,9 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 ## Prep for Part 2
 
 1. What are concrete things that could use improvement in the design of your device? For example: wording, timing, anticipation of misunderstandings...
-2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?
+   The timing could be better, and to have the machine respond automatically.
+2. What are other modes of interaction _beyond speech_ that you might also use to clarify how to interact?  
+   Gestures, proximity recognition
 3. Make a new storyboard, diagram and/or script based on these reflections.
 
 ![IDDLab3 2Storyboard](https://user-images.githubusercontent.com/89811189/136940041-f5a06527-5b25-4120-b153-4c910aa3ebe8.jpeg)
@@ -159,6 +161,7 @@ The system should:
 * require participants to speak to it. 
 
 *Document how the system works*
+   The system works primarily by voice controls.  The user speaks to the device.  The device translates that offline using the Kaldi recognizer class.  Then it parses the response looking for keywords.  The device responds appropriately given which keywords it has found.  The device also recognizes gestures.  
 
 *Include videos or screencaptures of both the system and the controller.*
 
@@ -168,18 +171,19 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+   The program had to be re-run after every interaction.  That is ok, the user's did not seem to notice, they only noticed that it was slow.  It took a few tries with all three users for them to get the timing down.  The device does not start recording sound until a second after the program starts, and then the user only has a limited time to state their command / question.  With practice with each participant we finally got it down.  As a result of this they knew it was being wizarded, because I had to point at them when I wanted them to start speaking.  Ideally this would have been seamless, and the device would be constantly monitoring for a command.  
+      The system also exited after every interaction despite the meat of the program being in a while loop.  Still investigating why that is heppening.
 
 ### What worked well about the controller and what didn't?
 
-\*\**your answer here*\*\*
+   The command / response / gestures all worked well.  What did not work so well was the timing of using the device.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-\*\**your answer here*\*\*
+   A way to get the system to be constantly listening would be good.  Also, having the system not exit after a single command / response would be necessary for it to be a truly functional device.  Being able to recognize gestures from further away would also be useful.
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-\*\**your answer here*\*\*
+   Feedback to responses could be sent to a database.  For instance, whether the user responded affirmative or negative, what choices they made on subjective questions posed by the device, and the frequency of each type of question.  Then the device could be tweaked to maximize the most common types of interactions.
 
