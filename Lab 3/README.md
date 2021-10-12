@@ -165,6 +165,12 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
+![sheller4](https://user-images.githubusercontent.com/89811189/136970276-cc94ab72-e888-4d21-be9a-b53a7f298018.PNG)
+![momdevice1](https://user-images.githubusercontent.com/89811189/136970556-37871f1c-9b92-4f9e-9c36-282c6fef1e31.JPG)
+![momdevice2](https://user-images.githubusercontent.com/89811189/136970565-6cbd3f13-c0f2-4249-990f-d2cb9440d7c1.JPG)
+
+
+
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
 
