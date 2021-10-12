@@ -161,7 +161,9 @@ The system should:
 * require participants to speak to it. 
 
 *Document how the system works*
-   The system works primarily by voice controls.  The user speaks to the device.  The device translates that offline using the Kaldi recognizer class.  Then it parses the response looking for keywords.  The device responds appropriately given which keywords it has found.  The device also recognizes gestures.  The real struggle with this assignment was getting the mic input and voice responses to work as intended.  The limit on using google speech to text of only 50 inquiries a day really hurt.  Eventually I ended up using the python subprocess.run() commands to run command line instructions. This came with it's own set of complications however.  Despite everything being localized there was still significant lag between input and response.
+   The system works primarily by voice controls.  The user speaks to the device.  The device translates that offline using the Kaldi recognizer class.  Then it parses the response looking for keywords.  The device responds appropriately given which keywords it has found.  The device also recognizes gestures.  The real struggle with this assignment was getting the mic input and voice responses to work as intended.  The limit on using google speech to text of only 50 inquiries a day really hurt.  Eventually I ended up using the python subprocess.run() commands to run command line instructions. This came with it's own set of complications however.  Despite everything being localized there was still significant lag between input and response.  
+   
+   The file to use is sheller4.py
 
 *Include videos or screencaptures of both the system and the controller.*
 
