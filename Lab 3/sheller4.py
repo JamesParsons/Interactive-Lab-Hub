@@ -48,6 +48,7 @@ reply = ""
 if  "dinner" in strout:
     print("strout has dinner")
     reply = "Swipe up and down for pizza, side to side for hamburgers"
+    subprocess.call(['espeak', reply, '-ven+f2', '-k5', '-s150'], stderr=subprocess.DEVNULL)
     while gesture == 0:
         gesture = apds.gesture()
     print('Saw gesture: {0}'.format(gesture))
