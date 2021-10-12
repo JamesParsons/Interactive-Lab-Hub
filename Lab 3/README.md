@@ -194,4 +194,6 @@ Answer the following:
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
    Feedback to responses could be sent to a database.  For instance, whether the user responded affirmative or negative, what choices they made on subjective questions posed by the device, and the frequency of each type of question.  Then the device could be tweaked to maximize the most common types of interactions.
+   
+ David Opatrny was the one that clued me into the fact that I was dealing with a json object.  Also Magdalena Horowitz helped to try and diagnose what was going on with my github account.
 
