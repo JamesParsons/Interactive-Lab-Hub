@@ -177,6 +177,9 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 ![IDD4ChastityBelt](https://user-images.githubusercontent.com/89811189/137631675-91df2239-c0ce-4db7-95c1-f43f73743ba7.jpeg)
 ![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137631677-e8b79f66-e260-442c-b10a-b8596455859a.jpeg)
+![IDD4Burglar](https://user-images.githubusercontent.com/89811189/137632054-fc95bf96-7117-4937-bad7-eacb2702a318.jpeg)
+![IDD4Garage](https://user-images.githubusercontent.com/89811189/137632059-b851ff37-7937-4202-8717-ef37f999c1a2.jpeg)
+![IDD4TrashCan](https://user-images.githubusercontent.com/89811189/137632065-6b0ef5ac-1cda-462c-b3ff-62dd907f2f84.jpeg)
 
 
 
