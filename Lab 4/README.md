@@ -232,15 +232,20 @@ Think about how you want to present the information about what your sensor is se
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
 Cat food bowl filler senses when the cat is near and displays "Filling"
-![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
-The display also shows when the kibble needs to be refilled (can have another distance sensor on the inside if possible)
-![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
-Likewise, it can also display a message when it is full
-![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
+![IDD4Filling](https://user-images.githubusercontent.com/89811189/137645084-3c44cb1c-a792-4326-ba6f-487d2fd92b97.jpeg)
 
-![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
+The display also shows "Empty" when the kibble needs to be refilled (can have another distance sensor on the inside if possible)
+![IDD4Empty](https://user-images.githubusercontent.com/89811189/137645097-eadacd31-fb22-499d-be68-83ef6f4716c4.jpeg)
 
-![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
+Likewise, it can also display a message when it is "full"
+![IDD4Full](https://user-images.githubusercontent.com/89811189/137645105-41eaed78-beb2-4e94-8724-9c17e3ddec9e.jpeg)
+
+It can also display when the cat is "Approaching"
+![IDD4Approaching](https://user-images.githubusercontent.com/89811189/137645109-e68319c1-a9f8-40e3-8394-e66d03b75d2c.jpeg)
+
+And when the cat is "Leaving"
+![IDD4Leaving](https://user-images.githubusercontent.com/89811189/137645115-4ab040cc-4424-49cf-9c27-878bd7551d63.jpeg)
+
 
 (not part of the assignment but what I'd really like is a display on our dishwasher that shows wether the dishes are clean or dirty)
 ![IDD4Kitchen](https://user-images.githubusercontent.com/89811189/137643332-465aefec-74b6-4e0d-adf1-dcc85f0243f2.jpeg)
