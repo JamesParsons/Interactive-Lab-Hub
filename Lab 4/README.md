@@ -190,6 +190,23 @@ These sketches are assuming a fast and accurate distance sensor with a wide rang
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+Display on the inside
+![IMG_2688](https://user-images.githubusercontent.com/89811189/137645253-c28d4acb-051e-40eb-8f13-44af328c1c87.JPG)
+
+The valve that opens with the servo
+![IMG_2693](https://user-images.githubusercontent.com/89811189/137645282-672f6bd3-f8a1-4042-afb1-3331ac63c2c6.JPG)
+
+The servo and pi
+![IMG_2694](https://user-images.githubusercontent.com/89811189/137645292-38949fff-4500-40f8-97d8-3da197a52356.JPG)
+
+The servo and pi protected
+![IMG_2695](https://user-images.githubusercontent.com/89811189/137645303-80b39a47-da3b-41bc-b637-830e86f44041.JPG)
+
+Prototype
+![IMG_2696](https://user-images.githubusercontent.com/89811189/137645304-81569aa6-8a75-4cad-af96-40ff03936f24.JPG)
+![IMG_2697](https://user-images.githubusercontent.com/89811189/137645315-8fb617fa-73cf-4fcf-9104-b2312f065a96.JPG)
+![IMG_2698](https://user-images.githubusercontent.com/89811189/137645313-2bc0b54a-8c92-4379-b59a-84e2037b58f7.JPG)
+
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
