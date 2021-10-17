@@ -181,7 +181,7 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 ![IDD4Burglar](https://user-images.githubusercontent.com/89811189/137632054-fc95bf96-7117-4937-bad7-eacb2702a318.jpeg)
 ![IDD4Garage](https://user-images.githubusercontent.com/89811189/137632059-b851ff37-7937-4202-8717-ef37f999c1a2.jpeg)
 ![IDD4TrashCan](https://user-images.githubusercontent.com/89811189/137632065-6b0ef5ac-1cda-462c-b3ff-62dd907f2f84.jpeg)
-
+![IDD4Fridge](https://user-images.githubusercontent.com/89811189/137643336-1503c8c0-2923-4339-97a5-b3e663d651ea.jpeg)
 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
@@ -231,13 +231,19 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
-![IDD4Kitchen](https://user-images.githubusercontent.com/89811189/137643332-465aefec-74b6-4e0d-adf1-dcc85f0243f2.jpeg)
-![IDD4Fridge](https://user-images.githubusercontent.com/89811189/137643336-1503c8c0-2923-4339-97a5-b3e663d651ea.jpeg)
+Cat food bowl filler senses when the cat is near and displays "Filling"
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
+The display also shows when the kibble needs to be refilled (can have another distance sensor on the inside if possible)
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
+Likewise, it can also display a message when it is full
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
 
 ![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
 
-Cat water - need to refill food / water
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
 
+(not part of the assignment but what I'd really like is a display on our dishwasher that shows wether the dishes are clean or dirty)
+![IDD4Kitchen](https://user-images.githubusercontent.com/89811189/137643332-465aefec-74b6-4e0d-adf1-dcc85f0243f2.jpeg)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 Cat bowl filler - The display needs to be readable while standing near the device without having to bend over.  Physically prototyping the device is the best way see if the screen is readable from an appropriate distance
