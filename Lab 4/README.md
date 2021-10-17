@@ -185,6 +185,8 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+These sketches are assuming a fast and accurate distance sensor with a wide range.  A few of the applications also assume that the feedback from the sensor is fast. One of the issues these sketches raise is the quickness and strength of the servo motors.  The distance sensor is a useful sensor, but its primarily usability seems to be in triggering an on / off state for other actuators or outputs.  
+
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
 
@@ -232,10 +234,14 @@ Cat water - need to refill food / water
 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+Cat bowl filler - The display needs to be readable while standing near the device without having to bend over.  Physically prototyping the device is the best way see if the screen is readable from an appropriate distance
+Garage Sensor - The display would have to be much bigger to be able to warn someone parking their car that they were getting too close to the wall.  
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+The reason for a display on the bowl filler is to let the humans know when the container needs to be refilled with cat food.  Asking the cat is insufficient.
 
 Build a cardbord prototype of your design.
 
