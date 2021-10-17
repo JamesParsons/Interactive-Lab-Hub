@@ -175,6 +175,8 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+![IDD4Restaurant](https://user-images.githubusercontent.com/89811189/137643342-1feefe95-7bce-44c4-b53f-0e8070e32f96.jpeg)
+
 ![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137631677-e8b79f66-e260-442c-b10a-b8596455859a.jpeg)
 ![IDD4Burglar](https://user-images.githubusercontent.com/89811189/137632054-fc95bf96-7117-4937-bad7-eacb2702a318.jpeg)
 ![IDD4Garage](https://user-images.githubusercontent.com/89811189/137632059-b851ff37-7937-4202-8717-ef37f999c1a2.jpeg)
@@ -228,6 +230,11 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+
+![IDD4Kitchen](https://user-images.githubusercontent.com/89811189/137643332-465aefec-74b6-4e0d-adf1-dcc85f0243f2.jpeg)
+![IDD4Fridge](https://user-images.githubusercontent.com/89811189/137643336-1503c8c0-2923-4339-97a5-b3e663d651ea.jpeg)
+
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137643368-fe142eb7-984f-4718-b90c-f2d0740d1b2c.jpeg)
 
 Cat water - need to refill food / water
 
