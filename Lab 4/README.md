@@ -260,6 +260,11 @@ In the class kit, you should be able to find the [Qwiic Servo Controller](https:
 
 <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.15752-9/245605956_303690921194525_3309212261588023460_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_ohc=FvFLlClTKuUAX9nJ3LR&_nc_ht=scontent-lga3-1.xx&oh=b7ec1abc8d458b6c1b7a00a6f11398ac&oe=618D7D96" width="400"/>
 
+Mine!
+![IMG_2680](https://user-images.githubusercontent.com/89811189/137634753-39afd70a-a8b4-42c8-a426-db362a291685.JPG)
+
+
+
 In this exercise, we will be using the nice [ServoKit library](https://learn.adafruit.com/16-channel-pwm-servo-driver/python-circuitpython) developed by Adafruit! We will continue to use the `circuitpython` virtual environment we created. Activate the virtual environment and make sure to install the latest required libraries by running:
 
 ```
