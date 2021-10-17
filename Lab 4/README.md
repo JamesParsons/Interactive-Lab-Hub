@@ -175,6 +175,11 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+![IDD4ChastityBelt](https://user-images.githubusercontent.com/89811189/137631675-91df2239-c0ce-4db7-95c1-f43f73743ba7.jpeg)
+![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137631677-e8b79f66-e260-442c-b10a-b8596455859a.jpeg)
+![IDD4TrashCan](https://user-images.githubusercontent.com/89811189/137631689-7b30d29f-9026-48bd-a69d-02af08cf5a5a.jpeg)
+![IDD4Burglar](https://user-images.githubusercontent.com/89811189/137631697-585446c7-5a30-4405-bc32-daf8b5c90992.jpeg)
+![IDD4Garage](https://user-images.githubusercontent.com/89811189/137631713-6a8c6cf4-f3db-448f-8a2f-7fa14f2e3d45.jpeg)
 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
