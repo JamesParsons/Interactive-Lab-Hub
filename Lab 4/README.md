@@ -191,7 +191,7 @@ A sensor on the door of the refridgerator that can use distance sensing to tell 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-MAny of these sketches are assuming an accurate distance sensor with a wide range.  A few of the applications also assume that the feedback from the sensor is fast. One of the issues these sketches raise is about the the quickness and strength of the servo motors.  The distance sensor is a useful sensor, but its primarily usability seems to be in triggering an on / off state for other actuators, outputs, sirens, or displays.  
+Many of these sketches are assuming an accurate distance sensor with a wide range.  A few of the applications also assume that the feedback from the sensor is fast. One of the issues these sketches raise is about the the quickness and strength of the servo motors.  The distance sensor is a useful sensor, but its primarily usability seems to be in triggering an on / off state for other actuators, outputs, sirens, or displays.  
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
