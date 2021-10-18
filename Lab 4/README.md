@@ -175,18 +175,23 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+Distance sensors to make sure tables and chairs at restaurants keep a safe 6 foot distance
 ![IDD4Restaurant](https://user-images.githubusercontent.com/89811189/137643342-1feefe95-7bce-44c4-b53f-0e8070e32f96.jpeg)
-
+A cat food dispenser that senses when the animal is approaching and fills their bowl.  Water would be better but my wife did not enjoy the idea of me filling cardboard boxes with water.
 ![IDD4CatFood](https://user-images.githubusercontent.com/89811189/137631677-e8b79f66-e260-442c-b10a-b8596455859a.jpeg)
+A sensor that acts as a simple burglar alarm.  When the dor opens, the distance sensor senses the shorter distance and sounds the alarm.
 ![IDD4Burglar](https://user-images.githubusercontent.com/89811189/137632054-fc95bf96-7117-4937-bad7-eacb2702a318.jpeg)
+A distance sensor on the wall of the garage that senses when the car is the perfect distance in the garage where the garage door can still close.
 ![IDD4Garage](https://user-images.githubusercontent.com/89811189/137632059-b851ff37-7937-4202-8717-ef37f999c1a2.jpeg)
+A trash can that uses a distance sensor to sense when a user throws trash towards the can and opens the lid.
 ![IDD4TrashCan](https://user-images.githubusercontent.com/89811189/137632065-6b0ef5ac-1cda-462c-b3ff-62dd907f2f84.jpeg)
+A sensor on the door of the refridgerator that can use distance sensing to tell when you need to buy more soda. soda. yes soda.
 ![IDD4Fridge](https://user-images.githubusercontent.com/89811189/137643336-1503c8c0-2923-4339-97a5-b3e663d651ea.jpeg)
 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
-These sketches are assuming a fast and accurate distance sensor with a wide range.  A few of the applications also assume that the feedback from the sensor is fast. One of the issues these sketches raise is the quickness and strength of the servo motors.  The distance sensor is a useful sensor, but its primarily usability seems to be in triggering an on / off state for other actuators or outputs.  
+MAny of these sketches are assuming an accurate distance sensor with a wide range.  A few of the applications also assume that the feedback from the sensor is fast. One of the issues these sketches raise is about the the quickness and strength of the servo motors.  The distance sensor is a useful sensor, but its primarily usability seems to be in triggering an on / off state for other actuators, outputs, sirens, or displays.  
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
@@ -277,6 +282,7 @@ Cat bowl filler - The display needs to be readable while standing near the devic
 Garage Sensor - The display would have to be much bigger to be able to warn someone parking their car that they were getting too close to the wall.  
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+![IMG_2688](https://user-images.githubusercontent.com/89811189/137645253-c28d4acb-051e-40eb-8f13-44af328c1c87.JPG)
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
@@ -285,6 +291,9 @@ The reason for a display on the bowl filler is to let the humans know when the c
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+![IMG_2696](https://user-images.githubusercontent.com/89811189/137645304-81569aa6-8a75-4cad-af96-40ff03936f24.JPG)
+![IMG_2697](https://user-images.githubusercontent.com/89811189/137645315-8fb617fa-73cf-4fcf-9104-b2312f065a96.JPG)
+![IMG_2698](https://user-images.githubusercontent.com/89811189/137645313-2bc0b54a-8c92-4379-b59a-84e2037b58f7.JPG)
 
 
 LAB PART 2
