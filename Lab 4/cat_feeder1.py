@@ -17,9 +17,9 @@ def distance_fun(distance):
 def come_or_go(distances):
     
     if distances[0] < distances[1] and distances[1] < distances[2] and distances[2] < distances[3]:
-        print("Approaching")
-    elif distances[0] > distances[1] and distances[1] > distances[2] and distances[2] > distances[3]:
         print("Leaving")
+    elif distances[0] > distances[1] and distances[1] > distances[2] and distances[2] > distances[3]:
+        print("Approaching")
     
 
 
@@ -57,12 +57,12 @@ def runExample():
         
         distance_fun(distanceFeet)
 
-        print("Distance(mm): %s Distance(ft): %s" % (distance, distanceFeet))        
+        #print("Distance(mm): %s Distance(ft): %s" % (distance, distanceFeet))        
 
-        print("X: %d, Y: %d, Button: %d" % ( \
-            myJoystick.horizontal, \
-                    myJoystick.vertical, \
-                                        myJoystick.button))
+        #print("X: %d, Y: %d, Button: %d" % ( \
+            #myJoystick.horizontal, \
+                    #myJoystick.vertical, \
+                                        #myJoystick.button))
 
         time.sleep(.5)
 
