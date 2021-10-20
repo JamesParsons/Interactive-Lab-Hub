@@ -24,7 +24,7 @@ def runExample():
     while True:
         
         ToF.start_ranging()
-	myJoystick.begin()
+	#myJoystick.begin()
 	# Write configuration bytes to initiate measurement
         #time.sleep(.1)
         distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
