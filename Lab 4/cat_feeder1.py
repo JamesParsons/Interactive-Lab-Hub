@@ -9,7 +9,7 @@ import qwiic
 
 def distance_fun(distance):
     
-    if distance >= 0 and distance <= 100:
+    if distance >= 0 and distance <= 1:
         print("between zero and 100")
     
 
@@ -39,7 +39,7 @@ def runExample():
         distanceInches = distance / 25.4
         distanceFeet = distanceInches / 12.0
 
-        distance_fun(distanceInches)
+        distance_fun(distanceFeet)
 
         print("Distance(mm): %s Distance(ft): %s" % (distance, distanceFeet))        
 
