@@ -11,6 +11,15 @@ def distance_fun(distance):
     
     if distance >= 0 and distance <= 1:
         print("within a foot")
+        
+################# come or go ####################################
+        
+def come_or_go(distances):
+    
+    if distances[0] < distances[1] and distances[1] < distances[2] and distances[2] < distances[3]:
+        print("Approaching")
+    elif distances[0] > distances[1] and distances[1] > distances[2] and distances[2] > distances[3]:
+        print("Leaving")
     
 
 
@@ -42,8 +51,10 @@ def runExample():
         distances.append(distanceFeet)
         distances.remove(distances[0])
         
-        print("distances ", distances)
+        #print("distances ", distances)
 
+        come_or_go(distances)
+        
         distance_fun(distanceFeet)
 
         print("Distance(mm): %s Distance(ft): %s" % (distance, distanceFeet))        
@@ -65,7 +76,7 @@ if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
 
 if __name__ == '__main__':
     
-    distances = [6,6,6]
+    distances = [6,6,6,6,6]
     
     try:
         runExample()
