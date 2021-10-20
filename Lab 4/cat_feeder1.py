@@ -10,7 +10,7 @@ import qwiic
 def distance_fun(distance):
     
     if distance >= 0 and distance <= 1:
-        print("between zero and 100")
+        print("within a foot")
     
 
 
@@ -38,6 +38,11 @@ def runExample():
 
         distanceInches = distance / 25.4
         distanceFeet = distanceInches / 12.0
+        
+        distances.append(distanceFeet)
+        distances.remove(distances[0])
+        
+        print("distances ", distances)
 
         distance_fun(distanceFeet)
 
@@ -59,6 +64,9 @@ if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
 
 
 if __name__ == '__main__':
+    
+    distances = [6,6,6]
+    
     try:
         runExample()
     except (KeyboardInterrupt, SystemExit) as exErr:
