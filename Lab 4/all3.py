@@ -4,7 +4,7 @@
 import board
 import busio
 import adafruit_ssd1306
-from PIL import Image, ImageDraw, ImageFont
+t
 
 
 # Create the I2C interface.
@@ -21,13 +21,8 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 
-width = disp.width
-height = disp.height
-image = Image.new('1', (width, height))
-draw = ImageDraw.Draw(image)
-
-draw.text((10,10), "Arriving", font="Arial", fill=255)
-draw.show()
+oled.pixel(10, 10, fill=255)
+oled.show()
 
 #while True:
     
