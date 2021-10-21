@@ -5,7 +5,7 @@ from __future__ import print_function
 import board
 import busio
 import adafruit_ssd1306
-from __future__ import print_function
+#from __future__ import print_function
 import qwiic_joystick
 import time
 import sys
