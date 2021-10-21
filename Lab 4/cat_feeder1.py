@@ -30,9 +30,9 @@ def distance_fun(distance):
     if distance >= 0 and distance <= .3:
         print("within 4 inches")
         
-        # Set the servo to 30 degree position
-        servo.angle = 30
-        time.sleep(2)
+        # Set the servo to 20 degree position
+        servo.angle = 20
+        time.sleep(1)
         
         servo.angle = 0
         time.sleep(2)        
