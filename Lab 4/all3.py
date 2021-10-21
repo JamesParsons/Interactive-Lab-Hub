@@ -33,7 +33,7 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 
-oled.text("OLED Display",10,10,color=255)
+oled.text("OLED Display",10,10)
 oled.show()
 
 #while True:
