@@ -20,7 +20,7 @@ oled.fill(0)
 oled.show()
 
 print("hello")
-oled.show()
+oled.text("Arriving")
 
 #while True:
     
