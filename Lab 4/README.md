@@ -295,6 +295,10 @@ Build a cardbord prototype of your design.
 ![IMG_2697](https://user-images.githubusercontent.com/89811189/137645315-8fb617fa-73cf-4fcf-9104-b2312f065a96.JPG)
 ![IMG_2698](https://user-images.githubusercontent.com/89811189/137645313-2bc0b54a-8c92-4379-b59a-84e2037b58f7.JPG)
 
+Video of the sensor part working for the cat bowl filler.  
+
+https://user-images.githubusercontent.com/89811189/138273154-28787ae0-76ad-4e69-be21-cdc0918bdc18.mp4
+
 
 LAB PART 2
 
