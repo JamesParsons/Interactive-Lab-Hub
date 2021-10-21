@@ -9,8 +9,8 @@ import qwiic
 
 def distance_fun(distance):
     
-    if distance >= 0 and distance <= 1:
-        print("within a foot")
+    if distance >= 0 and distance <= .3:
+        print("within 4 inches")
         
 ################# come or go ####################################
         
