@@ -4,6 +4,7 @@
 import board
 import busio
 import adafruit_ssd1306
+from PIL import Image, ImageDraw, ImageFont
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -20,8 +21,11 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 #oled.setCursor(0,0)
 #oled.println("Hello oled")
 
-text = "Hello oled"
-oled.draw_text2(0,0,text,2)
+im = Image.new('RGB', (20,20), (128, 128, 128))
+draw = ImageDraw.Draw(im)
+
+#text = "Hello oled"
+#oled.draw_text2(0,0,text,2)
 
 
 oled.show()
