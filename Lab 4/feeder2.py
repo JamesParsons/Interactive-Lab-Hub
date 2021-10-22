@@ -165,27 +165,34 @@ def come_or_go(distances):
             arrow_arriving(x)
             oled.show()
 
-######################## joystick #############################
+######################## distances #############################
 
-def runExample():
+def distances():
 
-    while True:
+    ToF.start_ranging()
+    distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+    ToF.stop_ranging()
 
-        ToF.start_ranging()
-        distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
-        ToF.stop_ranging()
-
-        distanceInches = distance / 25.4
-        distanceFeet = distanceInches / 12.0
+    distanceFeet = distanceInches / 12.0
+    
+    d1 = feeder.d1
+    d2 = feeder.d2
+    d3 = feeder.d3
+    
+    feeder.d1 = d2
+    feeder.d2 = d3
+    feeder.d3 = distanceFeet
+    
+    d1 = feeder.d1
+    d2 = feeder.d2
+    d3 = feeder.d3
+    
+    if d1 < d2 and d2 < d3:
+        feeder.arriving = True
         
-        distances.append(distanceFeet)
-        distances.remove(distances[0])
-
-        come_or_go(distances)
-        
-        distance_fun(distanceFeet)
-
-        time.sleep(.1)
+    if d1 > d2 and d2 > d3:
+        feeder.leaving = True
+    
 
 ########################################################################
 
@@ -206,20 +213,22 @@ if __name__ == '__main__':
     
     while True:
         
-        ToF.start_ranging()
-        distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
-        ToF.stop_ranging()
-    
-        distanceInches = distance / 25.4
-        distanceFeet = distanceInches / 12.0
-    
-        distances.append(distanceFeet)
-        distances.remove(distances[0])
+        distances()
         
-        feeder.d1 = distances[0]
-        feeder.d2 = distances[1]
-        feeder.d3 = distances[2]
+        #ToF.start_ranging()
+        #distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+        #ToF.stop_ranging()
+    
+        #distanceInches = distance / 25.4
+        #distanceFeet = distanceInches / 12.0
+    
+        #distances.append(distanceFeet)
+        #distances.remove(distances[0])
+        
+        #feeder.d1 = distances[0]
+        #feeder.d2 = distances[1]
+        #feeder.d3 = distances[2]
    
-        print(feeder.d1, feeder.d2, feeder.d3)
+        print(feeder.d1, feeder.d2, feeder.d3, feeder.arriving, feeder.leaving)
         
         time.sleep(.1)
