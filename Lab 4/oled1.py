@@ -52,8 +52,9 @@ oled.fill(0)
 oled.show()
 while True:
     
-    for x in range(100, 0, 1):
+    for x in range(10, 0, 1):
         arr(x)
-        sleep(.01)
+        sleep(.1)
+        oled.show()
     
     oled.show()
