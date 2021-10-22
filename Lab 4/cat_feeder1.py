@@ -143,18 +143,6 @@ def come_or_go(distances):
 
 def runExample():
 
-    #print("\nSparkFun qwiic Joystick   Example 1\n")
-    #myJoystick = qwiic_joystick.QwiicJoystick()
-
-    #if myJoystick.connected == False:
-        #print("The Qwiic Joystick device isn't connected to the system. Please check your connection", \
-              #file=sys.stderr)
-        #return
-
-    #myJoystick.begin()
-
-    #print("Initialized. Firmware Version: %s" % myJoystick.version)
-
     while True:
 
         ToF.start_ranging()
@@ -171,7 +159,7 @@ def runExample():
         
         distance_fun(distanceFeet)
 
-        time.sleep(.5)
+        time.sleep(.1)
 
 ########################################################################
 
