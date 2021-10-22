@@ -20,7 +20,8 @@ class Feeder:
         self.d3 = 0
         self.within_range = False
         
-        self.open_flag = 0
+        # if it is false it can be opened, then should be set to true
+        self.valve = False
         
         self.arriving = False
         self.leaving = False
@@ -194,10 +195,10 @@ def distances():
     else:
         feeder.leaving = False
         
-    opener = 0
-    if opener == 0 and distanceFeet <= .3:
+    
+    if feeder.valve == False and distanceFeet <= .3:
         print("open valve")
-        opener = 1
+        feeder.valve = True
     
 
 ########################################################################
