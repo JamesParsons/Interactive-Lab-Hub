@@ -26,7 +26,7 @@ class Feeder:
         # arriving = 1, leaving  = 2, neutral = 0
         self.state = 0
         
-        self.xpos = 1
+        self.xpos = 64
         #def open_and_close():
             
         
@@ -139,33 +139,19 @@ def arrow_leaving(xpos):
     
     oled.show()
 
-################ fun with distance ###############################
-
-def distance_fun(distance):
+        
+################# display ####################################
+        
+def display():
     
-    if distance >= 0 and distance <= .3:
-        print("within 4 inches")
-        
-        opc = 0
-        if opc == 0:
-            open_and_close()
-            opc = 1
-        
-        
-################# come or go ####################################
-        
-def come_or_go(distances):
+    xpos = feeder.xpos
     
-    if distances[0] < distances[1] and distances[1] < distances[2] and distances[2] < distances[3]:
-        print("Leaving")
-        for x in range(11,126,5):
-            arrow_leaving(x)
-            oled.show()
-    elif distances[0] > distances[1] and distances[1] > distances[2] and distances[2] > distances[3]:
-        print("Approaching")
-        for x in range(100,1,-5):
-            arrow_arriving(x)
-            oled.show()
+    if feeder.state == 1:
+        arrow_arriving(xpos)
+        feeder.xpos = xpos + 1
+    if feeder.state == 2:
+        arrow_leaving(xpos)
+        feeder.xpos = xpos - 1
 
 ######################## distances #############################
 
@@ -219,7 +205,8 @@ if __name__ == '__main__':
     
     while True:
         
-        distances()     
+        distances() 
+        display()
    
         print(feeder.d1, feeder.d2, feeder.state)
         
