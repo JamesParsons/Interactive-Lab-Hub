@@ -4,6 +4,7 @@
 import board
 import busio
 import adafruit_ssd1306
+import time
 
 
 # Create the I2C interface.
@@ -58,7 +59,7 @@ while True:
     
     for x in range(10):
         arr(x)
-        sleep(.1)
+        time.sleep(.1)
         oled.show()
     
     oled.show()
