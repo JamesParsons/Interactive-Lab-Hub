@@ -64,7 +64,7 @@ while True:
     
     #oled.pixel(10,10,255)
     
-    for x in range(100,1,-1):
+    for x in range(100,1,-5):
         arr(x)
         #time.sleep(.001)
         oled.show()
