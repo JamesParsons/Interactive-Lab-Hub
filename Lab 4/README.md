@@ -299,6 +299,13 @@ Video of the sensor part working for the cat bowl filler.
 
 https://user-images.githubusercontent.com/89811189/138273154-28787ae0-76ad-4e69-be21-cdc0918bdc18.mp4
 
+More video of it in action.  The display will be added in Part 2 as well as a better design.  It needs to have more of a funnel-shaped nozzle to dispense the food
+
+
+
+https://user-images.githubusercontent.com/89811189/138373989-494bfcc6-52f7-4cf1-9159-786575340fd9.mp4
+
+
 
 LAB PART 2
 
