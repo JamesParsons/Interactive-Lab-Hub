@@ -58,7 +58,7 @@ def arrow_leaving(xpos):
     
     # wall
     for y in range(32):
-        oled.pixel(127,y,255)
+        oled.pixel(1,y,255)
 
     # arrow flange up
     oled.pixel(xpos-4, 11, 255)
