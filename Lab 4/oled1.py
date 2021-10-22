@@ -100,8 +100,8 @@ while True:
         #oled.show()
   
     
-    for x in range(0,126,5):
-        arrow_leaving(11)
+    for x in range(11,126,5):
+        arrow_leaving(x)
         oled.show()
     
     
