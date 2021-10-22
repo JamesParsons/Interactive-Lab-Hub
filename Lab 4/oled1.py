@@ -16,10 +16,8 @@ i2c = busio.I2C(board.SCL, board.SDA)
 oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
 
-# Helper function to draw a circle from a given position with a given radius
-# This is an implementation of the midpoint circle algorithm,
-# see https://en.wikipedia.org/wiki/Midpoint_circle_algorithm#C_example for details
-def arr(xpos):
+
+def arrow_arriving(xpos):
     
     oled.fill(0)
     
@@ -54,7 +52,40 @@ def arr(xpos):
     
     oled.show()
     
+def arrow_leaving(xpos):
     
+    oled.fill(0)
+    
+    # wall
+    for y in range(32):
+        oled.pixel(127,y,255)
+
+    # arrow flange up
+    oled.pixel(xpos-4, 11, 255)
+    oled.pixel(xpos-3, 12, 255)
+    oled.pixel(xpos-2, 13, 255)
+    oled.pixel(xpos-1, 14, 255)
+    oled.pixel(xpos, 15, 255)
+    
+    # arrow flange down
+    oled.pixel(xpos-1, 16, 255)
+    oled.pixel(xpos-2, 17, 255)
+    oled.pixel(xpos-3, 18, 255)
+    oled.pixel(xpos-4, 19, 255)
+    
+    # arrow shaft
+    oled.pixel(xpos-1, 15, 255)
+    oled.pixel(xpos-2, 15, 255)
+    oled.pixel(xpos-3, 15, 255)
+    oled.pixel(xpos-4, 15, 255)
+    oled.pixel(xpos-5, 15, 255)
+    oled.pixel(xpos-6, 15, 255)
+    oled.pixel(xpos-7, 15, 255)
+    oled.pixel(xpos-8, 15, 255)
+    oled.pixel(xpos-9, 15, 255)
+    oled.pixel(xpos-10, 15, 255)
+    
+    oled.show()
     
 # start with a blank screen
 oled.fill(0)
@@ -64,10 +95,14 @@ while True:
     
     #oled.pixel(10,10,255)
     
-    for x in range(100,1,-5):
-        arr(x)
-        #time.sleep(.001)
+    #for x in range(100,1,-5):
+        #arrow_arriving(x)
+        #oled.show()
+  
+    
+    for x in range(0,126,5):
+        arrow_leaving(11)
         oled.show()
-        #print(x)
+    
     
     oled.show()
