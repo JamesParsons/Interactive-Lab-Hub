@@ -55,11 +55,11 @@ oled.fill(0)
 oled.show()
 while True:
     
-    oled.pixel(10,10,255)
+    #oled.pixel(10,10,255)
     
-    for x in range(10):
+    for x in range(100,0,1):
         arr(x)
-        time.sleep(.1)
+        time.sleep(.05)
         oled.show()
     
     oled.show()
