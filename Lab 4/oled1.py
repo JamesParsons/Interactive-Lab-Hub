@@ -20,7 +20,7 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 # see https://en.wikipedia.org/wiki/Midpoint_circle_algorithm#C_example for details
 def arr(xpos):
     
-    oled.pixel(11,11,255)
+    #oled.pixel(11,11,255)
     
     oled.pixel(xpos-4, 11, 255)
     oled.pixel(xpos-3, 12, 255)
@@ -56,7 +56,7 @@ while True:
     
     oled.pixel(10,10,255)
     
-    for x in range(10, 0, 1):
+    for x in range(10):
         arr(x)
         sleep(.1)
         oled.show()
