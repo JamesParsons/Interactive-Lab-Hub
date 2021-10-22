@@ -38,7 +38,7 @@ def open_and_close():
     time.sleep(1)
     
     servo.angle = 0
-    time.sleep(2) 
+    #time.sleep(2) 
     
 #################  arrow arriving ##########################
     
@@ -121,7 +121,10 @@ def distance_fun(distance):
     if distance >= 0 and distance <= .3:
         print("within 4 inches")
         
-        open_and_close()
+        opc = 0
+        if opc == 0:
+            open_and_close()
+            opc = 1
         
         
 ################# come or go ####################################
