@@ -197,6 +197,7 @@ def distances():
     opener = 0
     if opener == 0 and distanceFeet <= .3:
         print("open valve")
+        opener = 1
     
 
 ########################################################################
