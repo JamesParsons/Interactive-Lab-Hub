@@ -52,6 +52,8 @@ oled.fill(0)
 oled.show()
 while True:
     
+    oled.pixel(10,10,255)
+    
     for x in range(10, 0, 1):
         arr(x)
         sleep(.1)
