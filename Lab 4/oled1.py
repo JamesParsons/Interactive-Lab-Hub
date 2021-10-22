@@ -16,9 +16,12 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
  
 
-oled.setFontType(1)
-oled.setCursor(0,0)
-oled.println("Hello oled")
+#oled.setFontType(1)
+#oled.setCursor(0,0)
+#oled.println("Hello oled")
+
+text = "Hello oled"
+oled.draw_text2(0,0,text,2)
 
 
 oled.show()
