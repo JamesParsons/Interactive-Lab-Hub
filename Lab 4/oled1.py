@@ -23,17 +23,24 @@ def arr(xpos):
     
     oled.fill(0)
     
+    # wall
+    for y in range(32):
+        oled.pixel(1,y,255)
+
+    # arrow flange up
     oled.pixel(xpos+4, 11, 255)
     oled.pixel(xpos+3, 12, 255)
     oled.pixel(xpos+2, 13, 255)
     oled.pixel(xpos+1, 14, 255)
     oled.pixel(xpos, 15, 255)
     
+    # arrow flange down
     oled.pixel(xpos+1, 16, 255)
     oled.pixel(xpos+2, 17, 255)
     oled.pixel(xpos+3, 18, 255)
     oled.pixel(xpos+4, 19, 255)
     
+    # arrow shaft
     oled.pixel(xpos+1, 15, 255)
     oled.pixel(xpos+2, 15, 255)
     oled.pixel(xpos+3, 15, 255)
@@ -59,7 +66,7 @@ while True:
     
     for x in range(100,1,-1):
         arr(x)
-        time.sleep(.1)
+        time.sleep(.01)
         oled.show()
         print(x)
     
