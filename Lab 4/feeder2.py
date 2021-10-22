@@ -23,8 +23,8 @@ class Feeder:
         # if it is false it can be opened, then should be set to true
         self.valve = False
         
-        #self.arriving = False
-        self.state = Neutral
+        # arriving = 1, leaving  = 2, neutral = 0
+        self.state = 0
         
         self.xpos = 1
         #def open_and_close():
@@ -187,11 +187,11 @@ def distances():
     d2 = feeder.d2
 
     if d1 < d2:
-        feeder.state = arriving    
+        feeder.state = 1    
     elif d1 > d2:
-        feeder.state = leaving
+        feeder.state = 2
     else:
-        feeder.state = Neutral
+        feeder.state = 0
         
     
     if feeder.valve == False and distanceFeet <= .3:
