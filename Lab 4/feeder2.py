@@ -193,6 +193,10 @@ def distances():
         feeder.leaving = True
     else:
         feeder.leaving = False
+        
+    opener = 0
+    if opener == 0 and distanceFeet <= .3:
+        print("open valve")
     
 
 ########################################################################
