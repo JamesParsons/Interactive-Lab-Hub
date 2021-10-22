@@ -26,6 +26,7 @@ class Feeder:
         self.arriving = False
         self.leaving = False
         
+        self.xpos = 1
         #def open_and_close():
             
         
@@ -198,6 +199,7 @@ def distances():
     
     if feeder.valve == False and distanceFeet <= .3:
         print("open valve")
+        open_and_close()
         feeder.valve = True
     
 
