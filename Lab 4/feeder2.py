@@ -17,8 +17,6 @@ class Feeder:
         
         self.d1 = 0
         self.d2 = 0
-        self.d3 = 0
-        self.within_range = False
         
         # if it is false it can be opened, then should be set to true
         self.valve = False
