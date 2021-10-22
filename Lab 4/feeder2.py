@@ -204,7 +204,7 @@ if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
 
 if __name__ == '__main__':
     
-    distances = [6,6,6]
+    #distances = [6,6,6]
     
     oled.fill(0)
     oled.show()
