@@ -351,7 +351,10 @@ We encourage you to try using these controls, **while** paying particular attent
 ### Record
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+* "Looks like": shows how the device should look, feel, sit, weigh, etc.  It should look like a box.  Almost like the tank on a toilet or a garbage can, something you dont look twice at.
+* "Works like": shows what the device can do.   As you (or the cat) gets close it dispenses food into the cats bowl.
+* "Acts like": shows how a person would interact with the device.  See below
 
+https://user-images.githubusercontent.com/89811189/138527470-f6a8defa-5621-4161-99c3-08af23154b58.mp4
+
+![InsideCatFeederMarkedUp](https://user-images.githubusercontent.com/89811189/138527482-6d8b0792-1378-4c59-8052-7c86ed2fbccc.jpg)
