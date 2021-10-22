@@ -177,22 +177,19 @@ def distances():
     
     d1 = feeder.d1
     d2 = feeder.d2
-    d3 = feeder.d3
     
     feeder.d1 = d2
-    feeder.d2 = d3
-    feeder.d3 = distanceFeet
+    feeder.d2 = distanceFeet
     
     d1 = feeder.d1
     d2 = feeder.d2
-    d3 = feeder.d3
-    
-    if d1 < d2 and d2 < d3:
+
+    if d1 < d2:
         feeder.arriving = True
     else:
         feeder.arriving = False
         
-    if d1 > d2 and d2 > d3:
+    if d1 > d2:
         feeder.leaving = True
     else:
         feeder.leaving = False
@@ -217,22 +214,8 @@ if __name__ == '__main__':
     
     while True:
         
-        distances()
-        
-        #ToF.start_ranging()
-        #distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
-        #ToF.stop_ranging()
-    
-        #distanceInches = distance / 25.4
-        #distanceFeet = distanceInches / 12.0
-    
-        #distances.append(distanceFeet)
-        #distances.remove(distances[0])
-        
-        #feeder.d1 = distances[0]
-        #feeder.d2 = distances[1]
-        #feeder.d3 = distances[2]
+        distances()     
    
-        print(feeder.d1, feeder.d2, feeder.d3, feeder.arriving, feeder.leaving)
+        print(feeder.d1, feeder.d2, feeder.arriving, feeder.leaving)
         
         time.sleep(.1)
