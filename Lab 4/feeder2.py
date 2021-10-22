@@ -189,9 +189,13 @@ def distances():
     
     if d1 < d2 and d2 < d3:
         feeder.arriving = True
+    else:
+        feeder.arriving = False
         
     if d1 > d2 and d2 > d3:
         feeder.leaving = True
+    else:
+        feeder.leaving = False
     
 
 ########################################################################
