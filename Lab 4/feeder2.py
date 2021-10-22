@@ -71,6 +71,9 @@ def arrow_arriving(xpos):
     
     oled.fill(0)
     
+    if xpos <= 20:
+        xpos = 120
+    
     # wall
     for y in range(32):
         oled.pixel(1,y,255)
@@ -107,6 +110,9 @@ def arrow_arriving(xpos):
 def arrow_leaving(xpos):
     
     oled.fill(0)
+    
+    if xpos >= 120:
+        xpos = 20
     
     # wall
     for y in range(32):
@@ -148,10 +154,10 @@ def display():
     
     if feeder.state == 1:
         arrow_arriving(xpos)
-        feeder.xpos = xpos + 1
+        feeder.xpos = xpos - 1
     if feeder.state == 2:
         arrow_leaving(xpos)
-        feeder.xpos = xpos - 1
+        feeder.xpos = xpos + 1
 
 ######################## distances #############################
 
