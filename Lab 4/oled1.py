@@ -23,10 +23,10 @@ def arr(xpos):
     
     oled.fill(0)
     
-    oled.pixel(xpos-4, 11, 255)
-    oled.pixel(xpos-3, 12, 255)
-    oled.pixel(xpos-2, 13, 255)
-    oled.pixel(xpos-1, 14, 255)
+    oled.pixel(xpos+4, 11, 255)
+    oled.pixel(xpos+3, 12, 255)
+    oled.pixel(xpos+2, 13, 255)
+    oled.pixel(xpos+1, 14, 255)
     oled.pixel(xpos, 15, 255)
     
     oled.pixel(xpos+1, 16, 255)
@@ -57,7 +57,7 @@ while True:
     
     #oled.pixel(10,10,255)
     
-    for x in range(100):
+    for x in range(100,1,-1):
         arr(x)
         time.sleep(.1)
         oled.show()
