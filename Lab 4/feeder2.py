@@ -172,8 +172,8 @@ def distances():
     ToF.start_ranging()
     distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
     ToF.stop_ranging()
-
-    distanceFeet = distanceInches / 12.0
+    
+    distanceFeet = distance / 304.8
     
     d1 = feeder.d1
     d2 = feeder.d2
