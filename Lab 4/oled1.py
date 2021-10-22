@@ -24,6 +24,8 @@ oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 im = Image.new('RGB', (20,20), (128, 128, 128))
 draw = ImageDraw.Draw(im)
 
+draw.line((0,0,10,10), fill=(255, 255, 0), width=5)
+
 #text = "Hello oled"
 #oled.draw_text2(0,0,text,2)
 
