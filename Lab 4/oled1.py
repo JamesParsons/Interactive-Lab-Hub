@@ -66,8 +66,8 @@ while True:
     
     for x in range(100,1,-1):
         arr(x)
-        time.sleep(.01)
+        time.sleep(.001)
         oled.show()
-        print(x)
+        #print(x)
     
     oled.show()
