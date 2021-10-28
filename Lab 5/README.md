@@ -101,12 +101,16 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
 Contours - ![Contours1](https://user-images.githubusercontent.com/89811189/139149522-3eed8754-a006-4a88-a872-128833eafd22.PNG)
+Design for contours - Using contour detection would be great for path navigation.  If you had a robot vaccuum and want it to only clean a rug that is covering part of a floor - but not the uncovered part, you could use contour detection to only vaccuum the rug.
 
 Face detection - ![face-detection1](https://user-images.githubusercontent.com/89811189/139149583-ecceb11f-8086-4e52-8e0d-82c82b6dfd24.PNG)
+Design for face detection - a device like a video motion sensor that only alerts the system when a face is detected, instead of being triggered by birds or squirrels or flying spaghetti.
 
 Flow detection - ![Optical_flow_Worked](https://user-images.githubusercontent.com/89811189/139250719-a942f6ee-13b9-4c63-ac05-39abc6856bc0.PNG)
+Design for flow detection - A static mounted device could be used to track the paths of people crossing a space, so that landscapers know where to put the paving stones.  Lets say you are building a campus, and you want to lay paths between buildings that people will use (instead of walking through the landscaping).  You could mount the camera on a pole and it could record the paths people organically take.  Then create your paths / landscaping accordingly.  (this used to be done by just planting grass over the entire space and waiting to see where people walked on it so much that it died)
 
 Object detection - ![object-detection1](https://user-images.githubusercontent.com/89811189/139149649-db45f4bc-4ec6-4a38-baf4-d26468d0e3a3.PNG)
+Design for object detection - An automated trash can.  When the can senses an object being thrown at it, it opens it's lid to catch the trash.
 
 
 
@@ -186,6 +190,10 @@ The T-Machine! - It thinks my face is a mask.  I feel seen.  ![tmachine1](https:
 (**Optionally**: You can train your own model, too. First, visit [TeachableMachines](https://teachablemachine.withgoogle.com/train), select Image Project and Standard model. Second, use the webcam on your computer to train a model. For each class try to have over 50 samples, and consider adding a background class where you have nothing in view so the model is trained to know that this is the background. Then create classes based on what you want the model to classify. Lastly, preview and iterate, or export your model as a 'Tensorflow' model, and select 'Keras'. You will find an '.h5' file and a 'labels.txt' file. These are included in this labs 'teachable_machines' folder, to make the PPE model you used earlier. You can make your own folder or replace these to make your own classifier.)
 
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
+
+![tmachine1](https://user-images.githubusercontent.com/89811189/139149773-f13501fc-278d-4d24-bbfc-5533f01b9c4d.PNG)
+
+
 
 
 *Don't forget to run ```deactivate``` to end the Teachable Machines demo, and to reactivate with ```source tmachine/bin/activate``` when you want to use it again.*
