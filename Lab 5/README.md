@@ -222,42 +222,46 @@ Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+Testing how well the camera can detect object edges when mounted on a wheeled platform.  This could have many uses. A robot vaccuum could use this information to avoid obstacles, or to stay only on (or off) a floor covering.  A machine on a roof could be trained to avoid the edges.  If the system works well enough it could be used for street sweepers to get as close as possible to the curb.  It could also be used in vehicles for wall / other vehicle detection systems. The test is to see if the contour recognizer could keep up and update quickly enough if mounted on a moving object.
+
 ### Part C
 ### Test the interaction prototype
 
-
-
 https://user-images.githubusercontent.com/89811189/139499926-66e22998-70ea-4022-bbb1-1f2af5657f4b.mp4
-
-
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+1. When does it what it is supposed to do?  It seems to work when moving at most speeds I achieved by pushing / pulling the lego car with the camera mounted on it.
+1. When does it fail? Like most things that deal with connections over a network it 'jumps', but this occurs seldomly.  The question is wether it happens because of the software, hardware, or network.
+1. When it fails, why does it fail?  Speed?  Network connection?  Tough to say.
+1. Based on the behavior you have seen, what other scenarios could cause problems?  Using it for edge avoidance in a car might cause it to fail because of the speed of cars.   For instance, I would not want to bet my life on it if it were used in collision avoidance systems in my car (at least not if it were running on a raspberry pi over a network).
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
-1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+1. Are they aware of the uncertainties in the system?  If the system were in a vaccuum it would probably not matter.  If it were used in a vehicle safety system it would matter very much.  I think the users would be aware either way if the system failed.
+1. How bad would they be impacted by a miss classification?  In a car?  Let's hope we never find out.
+1. How could change your interactive system to address this?  Multiple redundancies.  Airbags. Autobraking.
+1. Are there optimizations you can try to do on your sense-making algorithm.  I can not figure out how to manipulate the feedback from the contour detection program to get any useful feedback despite what it already does. I do not know how to 'use' that output.
 
 ### Part D
 ### Characterize your own Observant system
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
-* What can you use X for?
-* What is a good environment for X?
-* What is a bad environment for X?
-* When will X break?
-* When it breaks how will X break?
-* What are other properties/behaviors of X?
-* How does X feel?
+* What can you use X for?  You could use it for vehicle or vaccuum obstacle avoidance 
+* What is a good environment for X? A clean monotone environment where the contours you want to detect are the only 'noise' in the environment.  An environment where there is too much going on visually can distract the program.  This can be seen in the difference between the first video done on a clean white table, and the second video done on a loud carpet.  The device actually did pretty well on the loud carpet, but not well enough to be useful for most applications.
+* What is a bad environment for X?  A visually busy environment is bad for the device.
+* When will X break?  When there is too much stimuli combined with moving the camera too quickly.
+* When it breaks how will X break?  It misses some of the contours.  In the busy carpet test it caught the variations in the carpet, but missed the corner of the wall.
+* What are other properties/behaviors of X?  The program does a decent job of recognizing contours but the edges are not crisp and clear.
+* How does X feel?  It's still pretty cool despite the issues, feels great.
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+
+
+https://user-images.githubusercontent.com/89811189/139502858-2e40b37b-f7f7-463a-8ad1-17dd46d7e4f6.mp4
+
+
 
 ### Part 2.
 
