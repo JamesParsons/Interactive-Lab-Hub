@@ -225,6 +225,12 @@ Try out different interaction outputs and inputs.
 ### Part C
 ### Test the interaction prototype
 
+
+
+https://user-images.githubusercontent.com/89811189/139499926-66e22998-70ea-4022-bbb1-1f2af5657f4b.mp4
+
+
+
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
