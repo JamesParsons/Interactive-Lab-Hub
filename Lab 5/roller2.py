@@ -97,7 +97,6 @@ while(True):
     img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
     if webCam:
         cv2.imshow('contours( press q to quit.)',img_c)
-        listen()
         if cv2.waitKey(1) & 0xFF == ord('q'):
             cap.release()
             break
@@ -105,6 +104,7 @@ while(True):
         break
 
 cv2.imwrite('contour_out.jpg',img_c)
+listen()
 cv2.destroyAllWindows()
 
 
