@@ -108,7 +108,8 @@ def contours():
     cv2.destroyAllWindows()
 
 while True:
-    listen()
+    
     contours()
+    listen()
 
 
