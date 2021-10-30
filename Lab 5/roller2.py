@@ -113,10 +113,8 @@ def contours():
     cv2.destroyAllWindows()
 
 while True:
-    start_time = time.time()
-    end_time = start_time + 1
-    while start_time != end_time:
-        contours()
+
+    contours()
     listen()
 
 
