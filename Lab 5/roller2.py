@@ -61,11 +61,9 @@ def release(key):
 
 ################################################################
 
-servo.angle = 25
-listen_keyboard(
-    on_press=press,
-    on_release=release,
-)
+def listen():
+    servo.angle = 25
+    listen_keyboard(on_press=press, on_release=release,)
 
 img=None
 webCam = False
@@ -99,6 +97,7 @@ while(True):
     img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
     if webCam:
         cv2.imshow('contours( press q to quit.)',img_c)
+        listen()
         if cv2.waitKey(1) & 0xFF == ord('q'):
             cap.release()
             break
