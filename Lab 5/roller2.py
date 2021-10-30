@@ -7,6 +7,7 @@ from adafruit_servokit import ServoKit
 import board
 import busio
 from sshkeyboard import listen_keyboard
+import time
 
 
 
@@ -66,6 +67,7 @@ def listen():
     listen_keyboard(on_press=press, on_release=release,)
 
 def contours():
+    start_time = time.time()
     img=None
     webCam = False
     if(len(sys.argv)>1):
@@ -101,6 +103,9 @@ def contours():
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cap.release()
                 break
+            elif time.time() == start_time + 1:
+                cap.release()
+                break
         else:
             break
     
@@ -108,8 +113,10 @@ def contours():
     cv2.destroyAllWindows()
 
 while True:
-    
-    contours()
+    start_time = time.time()
+    end_time = start_time + 1
+    while start_time != end_time:
+        contours()
     listen()
 
 
