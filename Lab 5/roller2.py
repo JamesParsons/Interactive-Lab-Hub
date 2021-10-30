@@ -60,11 +60,11 @@ def release(key):
     servo.angle = 25
 
 
-servo.angle = 25
-listen_keyboard(
-    on_press=press,
-    on_release=release,
-)
+#servo.angle = 25
+#listen_keyboard(
+    #on_press=press,
+    #on_release=release,
+#)
 
 img=None
 webCam = False
