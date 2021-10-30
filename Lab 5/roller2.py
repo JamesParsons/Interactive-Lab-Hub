@@ -102,7 +102,7 @@ def contours():
             cv2.imshow('contours( press q to quit.)',img_c)
             
             #########
-            if 0xFF == ord('up'):
+            if 0xFF == ord('r'):
                 print("hey we saw up!!")
             #########
             
