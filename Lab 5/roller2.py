@@ -107,7 +107,7 @@ def contours():
     cv2.imwrite('contour_out.jpg',img_c)
     cv2.destroyAllWindows()
 
-while True():
+while True:
     listen()
     contours()
 
