@@ -1,13 +1,13 @@
 
-from __future__ import print_function
-import qwiic_joystick
-import time
-import sys
-import qwiic
+#from __future__ import print_function
+#import qwiic_joystick
+#import time
+#import sys
+#import qwiic
 from adafruit_servokit import ServoKit
 import board
 import busio
-import adafruit_ssd1306
+#import adafruit_ssd1306
 from sshkeyboard import listen_keyboard
 
 
