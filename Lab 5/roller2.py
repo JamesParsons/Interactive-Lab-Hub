@@ -46,25 +46,26 @@ def open_and_close():
    
 ##################  get key presses  ######################   
     
-#def press(key):
-    #print(f"'{key}' pressed")
-    #if key == 'up':
-        #servo.angle = 50
-    #if key == 'down':
-        #servo.angle = 0
+def press(key):
+    print(f"'{key}' pressed")
+    if key == 'up':
+        servo.angle = 50
+    if key == 'down':
+        servo.angle = 0
         
         
 
-#def release(key):
-    #print(f"'{key}' released")
-    #servo.angle = 25
+def release(key):
+    print(f"'{key}' released")
+    servo.angle = 25
 
+################################################################
 
-#servo.angle = 25
-#listen_keyboard(
-    #on_press=press,
-    #on_release=release,
-#)
+servo.angle = 25
+listen_keyboard(
+    on_press=press,
+    on_release=release,
+)
 
 img=None
 webCam = False
