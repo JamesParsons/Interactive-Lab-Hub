@@ -99,13 +99,8 @@ def contours():
         contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
         img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
         if webCam:
-            cv2.imshow('contours( press q to quit.)',img_c)
-            
-            #########
-            if 0xFF == ord('r'):
-                print("hey we saw up!!")
-            #########
-            
+            cv2.imshow('contours( press q to quit.)',img_c) 
+            time.sleep(1)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cap.release()
                 break
