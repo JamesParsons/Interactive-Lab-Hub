@@ -58,7 +58,8 @@ def press(key):
     if key == 'left':
         servo.angle = 0
     if key == 'v':
-        contours()
+        #contours()
+        camera()
         #servo.angle = 0                
         
 
@@ -74,7 +75,7 @@ def listen():
     listen_keyboard(on_press=press)
 
 def contours():
-    start_time = time.time()
+    #start_time = time.time()
     img=None
     webCam = False
     if(len(sys.argv)>1):
@@ -98,33 +99,36 @@ def contours():
     
     while(True):
         if webCam:
-            #ret, img = cap.read()
+            ret, img = cap.read()
             
-        #imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        #ret,thresh = cv2.threshold(imgray,127,255,0)
+        imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+        ret,thresh = cv2.threshold(imgray,127,255,0)
     
-        #contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-        #img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
-        #if webCam:
-            #cv2.imshow('contours( press q to quit.)',img_c) 
-            #if cv2.waitKey(1) & 0xFF == ord('q'):
-                #cap.release()
-                #break
-        #else:
-            #break
-    
-    #cv2.imwrite('contour_out.jpg',img_c)
-    #cv2.destroyAllWindows()
-    
-            ret, frame = cap.read()
-            
-            #cv2.imshow('frame',frame)
-            cv2.imshow('contours( press q to quit.)',frame)
+        contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+        img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
+        if webCam:
+            cv2.imshow('contours( press q to quit.)',img_c) 
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                break    
-            
-            cap.release()
-            cv2.destroyAllWindows()            
+                cap.release()
+                break
+        else:
+            break
+    
+    cv2.imwrite('contour_out.jpg',img_c)
+    cv2.destroyAllWindows()
+    
+def camera():
+    cap = cv2.VideoCapture(0)
+    
+    while(True):
+        ret, frame = cap.read()
+        cv2.imshow('frame',frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    
+    cap.release()
+    cv2.destroyAllWindows()    
+                      
 
 while True:
 
