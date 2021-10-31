@@ -98,23 +98,32 @@ def contours():
     
     while(True):
         if webCam:
-            ret, img = cap.read()
+            #ret, img = cap.read()
+            
+        #imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+        #ret,thresh = cv2.threshold(imgray,127,255,0)
     
-        imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        ret,thresh = cv2.threshold(imgray,127,255,0)
+        #contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+        #img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
+        #if webCam:
+            #cv2.imshow('contours( press q to quit.)',img_c) 
+            #if cv2.waitKey(1) & 0xFF == ord('q'):
+                #cap.release()
+                #break
+        #else:
+            #break
     
-        contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-        img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
-        if webCam:
-            cv2.imshow('contours( press q to quit.)',img_c) 
+    #cv2.imwrite('contour_out.jpg',img_c)
+    #cv2.destroyAllWindows()
+    
+            ret, frame = cap.read()
+            
+            cv2.imshow('frame',frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                cap.release()
-                break
-        else:
-            break
-    
-    cv2.imwrite('contour_out.jpg',img_c)
-    cv2.destroyAllWindows()
+                break    
+            
+            cap.release()
+            cv2.destroyAllWindows()            
 
 while True:
 
