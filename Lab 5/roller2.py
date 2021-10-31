@@ -53,7 +53,13 @@ def press(key):
         servo.angle = 50
     if key == 'down':
         servo.angle = 0
-        
+    if key == 'right':
+        servo.angle = 50
+    if key == 'left':
+        servo.angle = 0
+    if key == 'v':
+        contours()
+        #servo.angle = 0                
         
 
 def release(key):
@@ -64,7 +70,8 @@ def release(key):
 
 def listen():
     servo.angle = 25
-    listen_keyboard(on_press=press, on_release=release,)
+    #listen_keyboard(on_press=press, on_release=release,)
+    listen_keyboard(on_press=press)
 
 def contours():
     start_time = time.time()
@@ -100,7 +107,6 @@ def contours():
         img_c = cv2.drawContours(img, contours, -1, (0,255,0), 3)
         if webCam:
             cv2.imshow('contours( press q to quit.)',img_c) 
-            time.sleep(1)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 cap.release()
                 break
@@ -112,7 +118,7 @@ def contours():
 
 while True:
 
-    contours()
+    #contours()
     listen()
 
 
