@@ -58,9 +58,10 @@ def press(key):
     if key == 'left':
         servo.angle = 0
     if key == 'v':
-        #contours()
         camera()
-        #servo.angle = 0                
+    if key == 'c':
+        contours()
+                     
         
 
 def release(key):
