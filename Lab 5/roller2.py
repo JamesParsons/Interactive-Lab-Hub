@@ -26,8 +26,8 @@ servo3 = kit.servo[3]
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
 servo.set_pulse_width_range(500, 2500)
-servo2.set_pulse_width_range(700,1500)
-servo3.set_pulse_width_range(1500,2300)
+servo2.set_pulse_width_range(14000,1500)
+servo3.set_pulse_width_range(1500,1600)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
