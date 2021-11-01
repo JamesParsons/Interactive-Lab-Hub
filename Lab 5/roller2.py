@@ -24,8 +24,8 @@ servo2 = kit.servo[1]
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
-#servo.set_pulse_width_range(500, 2500)
-servo.set_pulse_width_range(0,1800)
+servo.set_pulse_width_range(500, 2500)
+servo2.set_pulse_width_range(0,1800)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -51,10 +51,10 @@ def open_and_close():
     
 def press(key):
     print(f"'{key}' pressed")
-    if key == 'up':
-        servo.angle = 50
-    if key == 'down':
-        servo.angle = 0
+    #if key == 'up':
+        #servo.angle = 50
+    #if key == 'down':
+        #servo.angle = 0
     if key == 'right':
         servo.angle = 50
     if key == 'left':
@@ -64,8 +64,10 @@ def press(key):
     if key == 'c':
         contours()
                      
-    if key == 'w':
-        servo2.angle = 180
+    if key == 'up':
+        servo2.angle = 0
+    if key == 'down':
+        servo2.angle = 50
 
 def release(key):
     print(f"'{key}' released")
