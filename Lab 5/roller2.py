@@ -51,10 +51,10 @@ def open_and_close():
     
 def press(key):
     print(f"'{key}' pressed")
-    #if key == 'up':
-        #servo.angle = 50
-    #if key == 'down':
-        #servo.angle = 0
+    if key == 'up':
+        servo.angle = 50
+    if key == 'down':
+        servo.angle = 0
     if key == 'right':
         servo.angle = 50
     if key == 'left':
