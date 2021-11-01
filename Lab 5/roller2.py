@@ -8,6 +8,7 @@ import board
 import busio
 from sshkeyboard import listen_keyboard
 import time
+import pulseio
 
 
 
@@ -27,7 +28,9 @@ servo3 = kit.servo[3]
 # Each servo might be different, you can normally find this information in the servo datasheet
 servo.set_pulse_width_range(500, 2500)
 servo2.set_pulse_width_range(0,500)
-servo3.set_pulse_width_range(0,500)
+#servo3.set_pulse_width_range(0,500)
+
+continuous = adafruit_motor.servo.ContinuousServo(3, min_pulse=750, max_pulse=2250)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -68,7 +71,8 @@ def press(key):
                      
     if key == 'up':
         servo2.angle = 90
-        servo3.angle = -90
+        #servo3.angle = 90
+        continuous.throttle = -1
     if key == 'down':
         servo2.angle = 0
         servo3.angle = 0
