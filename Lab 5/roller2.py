@@ -20,10 +20,12 @@ kit = ServoKit(channels=16)
 
 # Name and set up the servo according to the channel you are using.
 servo = kit.servo[2]
+servo2 = kit.servo[1]
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
 servo.set_pulse_width_range(500, 2500)
+servo2.set_pulse_width_range(0,2500)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -62,7 +64,8 @@ def press(key):
     if key == 'c':
         contours()
                      
-        
+    if key == 'w':
+        servo2.angle = 359
 
 def release(key):
     print(f"'{key}' released")
