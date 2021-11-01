@@ -27,7 +27,7 @@ servo3 = kit.servo[3]
 # Each servo might be different, you can normally find this information in the servo datasheet
 servo.set_pulse_width_range(500, 2500)
 servo2.set_pulse_width_range(0,500)
-servo3.set_pulse_width_range(0,500)
+servo3.set_pulse_width_range(0,2300)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
