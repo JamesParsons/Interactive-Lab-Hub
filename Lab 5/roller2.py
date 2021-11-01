@@ -68,14 +68,14 @@ def press(key):
                      
     if key == 'up':
         servo2.angle = 90
-        servo3.angle = 270
+        servo3.angle = 180
     if key == 'down':
         servo2.angle = 0
         servo3.angle = 0
 
 def release(key):
     print(f"'{key}' released")
-    servo.angle = 25
+    servo.angle = 0
 
 ################################################################
 
