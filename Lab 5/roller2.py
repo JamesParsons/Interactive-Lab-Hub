@@ -30,7 +30,7 @@ servo.set_pulse_width_range(500, 2500)
 servo2.set_pulse_width_range(0,500)
 #servo3.set_pulse_width_range(0,500)
 
-continuous = adafruit_motor.servo.ContinuousServo(3, min_pulse=750, max_pulse=2250)
+continuous = servo3.ContinuousServo(3, min_pulse=750, max_pulse=2250)
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
