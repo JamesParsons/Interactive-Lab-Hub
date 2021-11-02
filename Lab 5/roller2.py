@@ -55,7 +55,10 @@ def open_and_close():
 ##################  get key presses  ######################   
     
 def press(key):
-    print(f"'{key}' pressed")    
+    print(f"'{key}' pressed")   
+    
+    global two_adjuster
+    global three_adjuster
     
     if key == ']':
         two_adjuster = two_adjuster + 1
