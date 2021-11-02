@@ -57,9 +57,6 @@ def open_and_close():
 def press(key):
     print(f"'{key}' pressed")
     
-    two_adjuster = 0
-    three_adjuster = 0
-    
     if key == ']':
         two_adjuster = two_adjuster + 1
     if key == '[':
@@ -100,6 +97,8 @@ def release(key):
 
 def listen():
     servo.angle = 25
+    two_adjuster = 0
+    three_adjuster = 0    
     #listen_keyboard(on_press=press, on_release=release,)
     listen_keyboard(on_press=press)
 
