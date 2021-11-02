@@ -70,8 +70,8 @@ def press(key):
         contours()
                      
     if key == 'up':
-        servo2.angle = 90
-        servo3.angle = 90
+        servo2.angle = 93
+        servo3.angle = 93
         #continuous.throttle = -1
     if key == 'down':
         servo2.angle = 0
