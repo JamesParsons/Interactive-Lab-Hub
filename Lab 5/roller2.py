@@ -55,7 +55,7 @@ def open_and_close():
 ##################  get key presses  ######################   
     
 def press(key):
-    print(f"'{key}' pressed")
+    print(f"'{key}' pressed")    
     
     if key == ']':
         two_adjuster = two_adjuster + 1
@@ -96,9 +96,7 @@ def release(key):
 ################################################################
 
 def listen():
-    servo.angle = 25
-    two_adjuster = 0
-    three_adjuster = 0    
+    servo.angle = 25    
     #listen_keyboard(on_press=press, on_release=release,)
     listen_keyboard(on_press=press)
 
@@ -159,6 +157,9 @@ def camera():
                       
 
 while True:
+    
+    two_adjuster = 0
+    three_adjuster = 0     
 
     #contours()
     listen()
