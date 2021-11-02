@@ -85,12 +85,12 @@ def press(key):
     if key == 'up':
         servo2.angle = 137 + two_adjuster
         servo3.angle = 47 + three_adjuster
-        print(servo2.angle, " ", servo3.angle)
+        print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
         #continuous.throttle = -1
     if key == 'down':
         servo2.angle = 92 + two_adjuster
         servo3.angle = 92 + three_adjuster
-        print(servo2.angle, " ", servo3.angle)
+        print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
 
 def release(key):
     print(f"'{key}' released")
