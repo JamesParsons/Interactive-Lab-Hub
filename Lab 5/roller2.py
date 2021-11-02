@@ -70,12 +70,12 @@ def press(key):
         contours()
                      
     if key == 'up':
-        servo2.angle = 93
-        servo3.angle = 93
+        servo2.angle = 138
+        servo3.angle = 48
         #continuous.throttle = -1
     if key == 'down':
-        servo2.angle = 0
-        servo3.angle = 0
+        servo2.angle = 93
+        servo3.angle = 93
 
 def release(key):
     print(f"'{key}' released")
