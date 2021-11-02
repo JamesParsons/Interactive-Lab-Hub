@@ -56,6 +56,19 @@ def open_and_close():
     
 def press(key):
     print(f"'{key}' pressed")
+    
+    two_adjuster = 0
+    three_adjuster = 0
+    
+    if key == ']':
+        two_adjuster = two_adjuster + 1
+    if key == '[':
+        two_adjuster = two_adjuster - 1
+    if key == 'p':
+        three_adjuster = three_adjuster + 1
+    if key == 'o':
+        three_adjuster = three_adjuster - 1
+    
     #if key == 'up':
         #servo.angle = 50
     #if key == 'down':
@@ -70,12 +83,12 @@ def press(key):
         contours()
                      
     if key == 'up':
-        servo2.angle = 137
-        servo3.angle = 47
+        servo2.angle = 137 + two_adjuster
+        servo3.angle = 47 + three_adjuster
         #continuous.throttle = -1
     if key == 'down':
-        servo2.angle = 92
-        servo3.angle = 92
+        servo2.angle = 92 + two_adjuster
+        servo3.angle = 92 + three_adjuster
 
 def release(key):
     print(f"'{key}' released")
