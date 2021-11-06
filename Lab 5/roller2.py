@@ -81,6 +81,7 @@ def press(key):
     
     if key == ']':
         two_adjuster = two_adjuster + 1
+        print("two adjuster now ", two_adjuster)
     if key == '[':
         two_adjuster = two_adjuster - 1
     if key == 'p':
@@ -102,13 +103,13 @@ def press(key):
         contours()
                      
     if key == 'up':
-        servo2.angle = 137 + two_adjuster
-        servo3.angle = 47 + three_adjuster
+        servo2.angle = 135 + two_adjuster
+        servo3.angle = 45 + three_adjuster
         print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
         #continuous.throttle = -1
     if key == 'down':
-        servo2.angle = 92 + two_adjuster
-        servo3.angle = 92 + three_adjuster
+        servo2.angle = 90 + two_adjuster
+        servo3.angle = 90 + three_adjuster
         print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
         
     if key == 'd':
