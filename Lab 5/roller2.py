@@ -9,6 +9,11 @@ import busio
 from sshkeyboard import listen_keyboard
 import time
 import pulseio
+import qwiic_twist
+
+import qwiic_joystick
+import qwiic
+
 
 
 
@@ -51,6 +56,20 @@ def open_and_close():
     
     servo.angle = 0
     #time.sleep(2) 
+    
+################# distance sensor #########################
+    
+def distances():
+
+    ToF.start_ranging()
+    distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+    ToF.stop_ranging()
+    
+    distanceFeet = distance / 304.8 
+    
+    print("distance to edge: ", distanceFeet)
+    
+    
    
 ##################  get key presses  ######################   
     
@@ -91,6 +110,9 @@ def press(key):
         servo2.angle = 92 + two_adjuster
         servo3.angle = 92 + three_adjuster
         print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
+        
+    if key == 'd':
+        distances()
 
 def release(key):
     print(f"'{key}' released")
@@ -162,7 +184,12 @@ def camera():
 while True:
     
     two_adjuster = 0
-    three_adjuster = 0     
+    three_adjuster = 0  
+    
+    print("VL53L1X Qwiic Test\n")
+    ToF = qwiic.QwiicVL53L1X()
+    if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
+        print("Sensor online!\n")    
 
     #contours()
     listen()
