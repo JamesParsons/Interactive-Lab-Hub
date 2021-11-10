@@ -119,7 +119,7 @@ i ate the grapes afterward.
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
-I used the joystick. This hold the potential for a lot of fun.
+I used the joystick. This holds the potential for a lot of fun.
 ![IMG_2768](https://user-images.githubusercontent.com/89811189/141137688-a6245a0d-cc92-40ff-b073-baab6ae181b2.JPG)
 
 ![image](https://user-images.githubusercontent.com/89811189/141137529-05d1f4e1-1f83-420b-939c-5420e7875155.png)
@@ -155,6 +155,8 @@ You may ask "but what if I missed class?" Am I not admitted into the collective 
 Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-true-colornet.glitch.me/) and become one with the ColorNet on the inter-webs. Glitch is a great tool for prototyping sites, interfaces and web-apps that's worth taking some time to get familiar with if you have a chance. Its not super pertinent for the class but good to know either way. 
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
+I am one with the collective. Hail color!
+![IMG_2769](https://user-images.githubusercontent.com/89811189/141140253-e6faa564-d38b-44e4-be35-717a386a0dbc.JPG)
 
 
 ### Part E
