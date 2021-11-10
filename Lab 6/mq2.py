@@ -15,7 +15,7 @@ import uuid
 
 
 
-topic = 'IDD/colors/JSP'
+topic = 'IDD/JSP'
 
 def on_connect(client, userdata, flags, rc):
     print(f"connected with result code {rc}")
