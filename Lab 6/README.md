@@ -106,6 +106,14 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
  ```
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+When i touched the red or the green grape in MQTT it read 'Twizzler 6 / Twizzler 11 touched!'
+
+![IMG_2766](https://user-images.githubusercontent.com/89811189/141133807-782eebb5-37c7-4485-9518-e8382c69cabb.JPG)
+
+![IMG_2767](https://user-images.githubusercontent.com/89811189/141133890-aaca6427-ab09-4517-a352-5eec517b0341.JPG)
+
+i ate the grapes afterward. 
+
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
