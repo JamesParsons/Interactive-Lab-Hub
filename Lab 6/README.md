@@ -119,6 +119,11 @@ i ate the grapes afterward.
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+I used the joystick. This hold the potential for a lot of fun.
+![IMG_2768](https://user-images.githubusercontent.com/89811189/141137688-a6245a0d-cc92-40ff-b073-baab6ae181b2.JPG)
+
+![image](https://user-images.githubusercontent.com/89811189/141137529-05d1f4e1-1f83-420b-939c-5420e7875155.png)
+
 
 ### Part D
 ### The One True ColorNet
