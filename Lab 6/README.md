@@ -113,6 +113,8 @@ When i touched the red or the green grape in MQTT it read 'Twizzler 6 / Twizzler
 ![IMG_2767](https://user-images.githubusercontent.com/89811189/141133890-aaca6427-ab09-4517-a352-5eec517b0341.JPG)
 
 i ate the grapes afterward. 
+![image](https://user-images.githubusercontent.com/89811189/141134305-d409ad22-156f-4659-83de-482814cd27dc.png)
+
 
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
