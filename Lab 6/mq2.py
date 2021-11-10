@@ -25,7 +25,7 @@ def on_message(cleint, userdata, msg):
     # if a message is recieved on the colors topic, parse it and set the color
     if msg.topic == topic:
         #print("You pressed the button, fantastic")
-        print(msg + " from MQTT")
+        print(msg)
 
 client = mqtt.Client(str(uuid.uuid1()))
 client.tls_set()
@@ -66,7 +66,7 @@ while True:
         client.publish(topic, "Button pressed!")
         #client.publish(topic, strval)
     
-    time.sleep(.1)
+    time.sleep(.5)
 
 
 
