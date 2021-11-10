@@ -60,7 +60,7 @@ while True:
     
     
 
-    if myJoystick.buttone == 0:
+    if myJoystick.button == 0:
         client.publish(topic, "Button pressed!")
     
     time.sleep(.01)
