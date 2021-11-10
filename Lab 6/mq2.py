@@ -45,7 +45,7 @@ def handler(signum, frame):
     exit (0)
 
 # when sigint happens, do the handler callback function
-signal.signal(signal.SIGINT, handler)
+#signal.signal(signal.SIGINT, handler)
 
 myJoystick = qwiic_joystick.QwiicJoystick()
 myJoystick.begin()
