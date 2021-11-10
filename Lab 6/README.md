@@ -86,6 +86,10 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1) Trivia game:  One Pi could host the questions and the other pi's could be used for people answering the question.
+2) Simon gestures:  Pi's have gesture sensors connected.  The first person makes a gesture.  The second person has to respond with the same gesture.  If they get it right, they make another gesture.  whenver someone can not mimic the previous gesture the other pi gets a point.
+3) 
+
 ### Part C
 ### Streaming a Sensor
 
