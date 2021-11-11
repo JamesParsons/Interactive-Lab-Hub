@@ -87,8 +87,10 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
 1) Trivia game:  One Pi could host the questions and the other pi's could be used for people answering the question.
-2) Simon gestures:  Pi's have gesture sensors connected.  The first person makes a gesture.  The second person has to respond with the same gesture.  If they get it right, they make another gesture.  whenver someone can not mimic the previous gesture the other pi gets a point.
-3) 
+2) Simon gestures:  Pi's have gesture sensors connected.  The first person makes a gesture.  The second person has to respond with the same gesture.  If they get it right, they make another gesture.  Whenever someone can not mimic the previous gesture the other pi gets a point.
+3) Novel generator:  The main pi publishes the first line of a novel, like "It was a dark and stormy night. (2)"  Then whoever is pi #2 writes the next line, and names the successive author when they are done.  Around and around it goes until something fun has been written.
+4) Car army:  Multiple satellite pi's could be communicating with the broker.  The satellite pi's send their distance sensor values to the brokerPi, which tells them to move right, left, forward or backward to make cool shapes.  You could make your car army form a star.  Or a letter (like "B").
+5) Best friend waker-upper.  If both pi's are connected, then pi A can send a message that actuates a servo on pi B that dumps a glass of water on their friend who is late to class.
 
 ### Part C
 ### Streaming a Sensor
