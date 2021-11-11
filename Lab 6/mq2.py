@@ -66,7 +66,7 @@ while True:
         client.publish(topic, "Button pressed!")
         #client.publish(topic, strval)
     
-    time.sleep(.5)
+    time.sleep(.25)
 
 
 
