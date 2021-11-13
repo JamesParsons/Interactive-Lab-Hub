@@ -91,6 +91,7 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 3) Novel generator:  The main pi publishes the first line of a novel, like "It was a dark and stormy night. (2)"  Then whoever is pi #2 writes the next line, and names the successive author when they are done.  Around and around it goes until something fun has been written.
 4) Car army:  Multiple satellite pi's could be communicating with the broker.  The satellite pi's send their distance sensor values to the brokerPi, which tells them to move right, left, forward or backward to make cool shapes.  You could make your car army form a star.  Or a letter (like "B").
 5) Best friend waker-upper.  If both pi's are connected, then pi A can send a message that actuates a servo on pi B that dumps a glass of water on their friend who is late to class.
+6) Joy stick horse.  One person goes first and enters a 'letter' using the joystick, like the script letter 'a'.  Then the remaining players have a chance to copy it.  If they succesfully copy the letter within a reasonable percentage, the original player gets a letter.  Then if the players can not match the original letter drawn, they pick up a letter.  The player who has not earned all the letters in horse (the last remaining player) is the winner.
 
 ### Part C
 ### Streaming a Sensor
