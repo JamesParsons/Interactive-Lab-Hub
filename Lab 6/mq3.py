@@ -2,7 +2,7 @@ from __future__ import print_function
 import os
 import subprocess
 from time import sleep
-from vosk import Model, KaldiRecognizer
+#from vosk import Model, KaldiRecognizer
 import sys
 import os
 import wave
