@@ -53,20 +53,20 @@ i = 0
 # our main loop To send messages
 while True:
     
-    if i == 0:
-        player = "Mahir"
-    elif i == 1:
-        player = "Victoria"
-    elif i == 2:
-        player = "James"
+    #if i == 0:
+        #player = "Mahir"
+    #elif i == 1:
+        #player = "Victoria"
+    #elif i == 2:
+        #player = "James"
     
-    if i == 2:
-        i = 0
-    else:
-        i = i + 1
+    #if i == 2:
+        #i = 0
+    #else:
+        #i = i + 1
         
     
-    line = input(f"{player}: ")
+    line = input("Next Line: ")
     #print(line)
     
     client.publish(topic, line)
