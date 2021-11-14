@@ -62,7 +62,7 @@ while True:
         
         client.publish(topic, distance)
         
-        time.sleep(5)
+        sleep(5)
 
 
 
