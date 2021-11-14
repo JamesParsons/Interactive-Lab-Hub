@@ -3,9 +3,9 @@ from __future__ import print_function
 import time
 import sys
 import time
-import board
-import busio
-import adafruit_mpr121
+#import board
+#import busio
+#import adafruit_mpr121
 
 import paho.mqtt.client as mqtt
 import uuid
@@ -20,6 +20,8 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe(topic)
 
 def on_message(cleint, userdata, msg):
+    
+    global novel
     # function to receive the message
     if msg.topic == topic:
         print(msg.payload.decode())
@@ -37,6 +39,8 @@ client.connect(
     port=8883)
 
 client.loop_start()
+
+
 
 # this lets us exit gracefully (close the connection to the broker)
 def handler(signum, frame):
