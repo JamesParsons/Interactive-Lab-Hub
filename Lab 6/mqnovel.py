@@ -47,11 +47,26 @@ def handler(signum, frame):
     print('exit gracefully')
     client.loop_stop()
     exit (0)
+    
+i = 0
 
 # our main loop To send messages
 while True:
     
-    line = input("Next Line: ")
+    if i == 0:
+        player = "Mahir"
+    elif i == 1:
+        player = "Victoria"
+    elif i == 2:
+        player = "James"
+    
+    if i == 2:
+        i = 0
+    else:
+        i = i + 1
+        
+    
+    line = input(f"{player}: ")
     #print(line)
     
     client.publish(topic, line)
