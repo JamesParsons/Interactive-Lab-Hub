@@ -18,14 +18,20 @@ topic = 'IDD/MVP'
 i2c = busio.I2C(board.SCL, board.SDA)
 
 def distances():
+    
+    while True:
+        
+        ToF = qwiic.QwiicVL53L1X()
+        if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
+            print("Sensor online!\n")        
 
-    ToF.start_ranging()
-    distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
-    ToF.stop_ranging()
-    
-    distanceFeet = distance / 304.8 
-    
-    print("distance to edge: ", distanceFeet)
+        ToF.start_ranging()
+        distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+        ToF.stop_ranging()
+        
+        distanceFeet = distance / 304.8 
+        
+        print("distance to edge: ", distanceFeet)
 
 
 def on_connect(client, userdata, flags, rc):
