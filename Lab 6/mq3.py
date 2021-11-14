@@ -6,6 +6,7 @@ import board
 import numpy as np
 #import cv2
 import busio
+import qwiic
 
 import paho.mqtt.client as mqtt
 import uuid
@@ -17,21 +18,15 @@ topic = 'IDD/MVP'
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
 
-def distances():
-    
-    while True:
-        
-        ToF = qwiic.QwiicVL53L1X()
-        if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
-            print("Sensor online!\n")        
+def distances():       
 
-        ToF.start_ranging()
-        distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
-        ToF.stop_ranging()
-        
-        distanceFeet = distance / 304.8 
-        
-        print("distance to edge: ", distanceFeet)
+    ToF.start_ranging()
+    distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+    ToF.stop_ranging()
+    
+    distanceFeet = distance / 304.8 
+    
+    print("distance to edge: ", distanceFeet)
 
 
 def on_connect(client, userdata, flags, rc):
@@ -56,9 +51,16 @@ client.connect(
 
 client.loop_start()
 
-distance = distances()
 
-client.publish(topic, distance)
+while True:
+
+        ToF = qwiic.QwiicVL53L1X()
+        if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
+                print("Sensor online!\n") 
+
+        distance = distances()
+        
+        client.publish(topic, distance)
 
 
 
