@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import subprocess
 from time import sleep
@@ -9,7 +10,6 @@ import json
 import board
 import digitalio
 #from adafruit_apds9960.apds9960 import APDS9960
-from __future__ import print_function
 import busio
 import adafruit_mpr121
 
