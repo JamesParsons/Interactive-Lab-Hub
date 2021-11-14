@@ -61,6 +61,8 @@ while True:
         distance = distances()
         
         client.publish(topic, distance)
+        
+        time.sleep(5)
 
 
 
