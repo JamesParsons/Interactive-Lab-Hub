@@ -4,7 +4,7 @@ import subprocess
 from time import sleep
 import board
 import numpy as np
-import cv2
+#import cv2
 import busio
 
 import paho.mqtt.client as mqtt
