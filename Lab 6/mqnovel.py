@@ -25,7 +25,7 @@ def on_message(cleint, userdata, msg):
     # function to receive the message
     if msg.topic == topic:
         #print(msg.payload.decode())
-        novel = novel + " " + msg.payload.decode() + " "
+        novel = novel + " " + msg.payload.decode() + ". "
         print(novel)
 
 client = mqtt.Client(str(uuid.uuid1()))
