@@ -24,7 +24,6 @@ def on_message(cleint, userdata, msg):
     global novel
     # function to receive the message
     if msg.topic == topic:
-        #print(msg.payload.decode())
         novel = novel + " " + msg.payload.decode() + ". "
         print(novel)
 
@@ -47,27 +46,11 @@ def handler(signum, frame):
     print('exit gracefully')
     client.loop_stop()
     exit (0)
-    
-i = 0
 
 # our main loop To send messages
 while True:
-    
-    #if i == 0:
-        #player = "Mahir"
-    #elif i == 1:
-        #player = "Victoria"
-    #elif i == 2:
-        #player = "James"
-    
-    #if i == 2:
-        #i = 0
-    #else:
-        #i = i + 1
-        
-    
+            
     line = input("Next Line: ")
-    #print(line)
     
     client.publish(topic, line)
     
