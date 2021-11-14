@@ -24,8 +24,8 @@ def on_message(cleint, userdata, msg):
     global novel
     # function to receive the message
     if msg.topic == topic:
-        print(msg.payload.decode())
-        novel = novel + "" + msg.payload.decode() + ""
+        #print(msg.payload.decode())
+        novel = novel + " " + msg.payload.decode() + " "
         print(novel)
 
 client = mqtt.Client(str(uuid.uuid1()))
@@ -48,14 +48,11 @@ def handler(signum, frame):
     client.loop_stop()
     exit (0)
 
-
-
-
 # our main loop To send messages
 while True:
     
     line = input("Next Line: ")
-    print(line)
+    #print(line)
     
     client.publish(topic, line)
     
