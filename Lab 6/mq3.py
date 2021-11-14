@@ -27,6 +27,8 @@ def distances():
     distanceFeet = distance / 304.8 
     
     print("distance to edge: ", distanceFeet)
+    
+    return distanceFeet
 
 
 def on_connect(client, userdata, flags, rc):
