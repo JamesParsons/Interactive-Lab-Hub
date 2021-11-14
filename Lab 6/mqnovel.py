@@ -16,7 +16,7 @@ topic = 'IDD/MVP'
 novel = ""
 
 def on_connect(client, userdata, flags, rc):
-    print(f"connected with result code {rc}")
+    #print(f"connected with result code {rc}")
     client.subscribe(topic)
 
 def on_message(cleint, userdata, msg):
