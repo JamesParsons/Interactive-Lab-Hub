@@ -2,16 +2,10 @@ from __future__ import print_function
 import os
 import subprocess
 from time import sleep
-#from vosk import Model, KaldiRecognizer
-import sys
-import os
-import wave
-import json
 import board
-import digitalio
-#from adafruit_apds9960.apds9960 import APDS9960
+import numpy as np
+import cv2
 import busio
-import adafruit_mpr121
 
 import paho.mqtt.client as mqtt
 import uuid
@@ -20,6 +14,19 @@ import uuid
 
 
 topic = 'IDD/MVP'
+# Create the I2C interface.
+i2c = busio.I2C(board.SCL, board.SDA)
+
+def distances():
+
+    ToF.start_ranging()
+    distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
+    ToF.stop_ranging()
+    
+    distanceFeet = distance / 304.8 
+    
+    print("distance to edge: ", distanceFeet)
+
 
 def on_connect(client, userdata, flags, rc):
     print(f"connected with result code {rc}")
@@ -43,11 +50,19 @@ client.connect(
 
 client.loop_start()
 
+distance = distances()
 
-#subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d', '5', '-t', 'wav', 'recorded_mono.wav'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-audio = subprocess.run(['arecord', '-D', 'hw:3,0', '-f', 'cd', '-c1', '-r', '48000', '-d', '5', '-t', 'wav', 'recorded_mono.wav'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+client.publish(topic, distance)
 
 
-client.publish(topic, audio)
+
+
+
+
+
+
+
+
+
 
 
