@@ -71,7 +71,7 @@ while True:
     
     client.publish(topic, line)
     
-    time.sleep(5)
+    #time.sleep(1)
        
     
     
