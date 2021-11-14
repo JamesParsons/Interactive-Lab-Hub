@@ -53,20 +53,20 @@ myJoystick = qwiic_joystick.QwiicJoystick()
 myJoystick.begin()
 
 # make the window
-root = Tk()
-root.geometry("600x600")
-root['bg'] = ['blue']
-root.title("Choose Data")
+#root = Tk()
+#root.geometry("600x600")
+#root['bg'] = ['blue']
+#root.title("Choose Data")
 
-canvas = Canvas(root, width=1024, height=1024)
-canvas.pack() 
+#canvas = Canvas(root, width=1024, height=1024)
+#canvas.pack() 
 
-xval = 0
-yval = 0
-width = 64
+#xval = 0
+#yval = 0
+#width = 64
 
-for x in range(15):
-    canvas.create_rectangle((xval*x), (yval*x), (xval*x)+width, (yval*x)+width)
+#for x in range(15):
+    #canvas.create_rectangle((xval*x), (yval*x), (xval*x)+width, (yval*x)+width)
 
 # our main loop To send messages
 while True:
@@ -79,7 +79,7 @@ while True:
        
     
     
-    #client.publish(topic, strval)
+    client.publish(topic, strval)
 
     if myJoystick.button == 0:
         client.publish(topic, "Button pressed!")
