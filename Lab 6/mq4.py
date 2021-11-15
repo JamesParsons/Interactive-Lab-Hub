@@ -37,6 +37,7 @@ def listen():
 def press(key):
     if key == 'd':
         distance = distances()
+        print(distance)
         
     distance_lower_bar = distance * .9
     distance_upper_bar = distance * 1.1
