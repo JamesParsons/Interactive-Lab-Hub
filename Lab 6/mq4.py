@@ -75,11 +75,15 @@ client.connect(
 client.loop_start()
 
 
-ToF = qwiic.QwiicVL53L1X()
-if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
-    print("Sensor online!\n")
+#ToF = qwiic.QwiicVL53L1X()
+#if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
+    #print("Sensor online!\n")
 
 while True:
+    
+    ToF = qwiic.QwiicVL53L1X()
+    if (ToF.sensor_init() == None):					 # Begin returns 0 on a good init
+        print("Sensor online!\n")    
     
     listen()
      
