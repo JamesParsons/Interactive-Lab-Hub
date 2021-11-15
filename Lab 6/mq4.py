@@ -25,7 +25,7 @@ def distances():
     distanceFeet = distance / 304.8 
     distance_inches = distanceFeet * 12
     
-    inches = distanceFeet / 25.4
+    inches = distanceFeet / 3.448
     print("testing should be inches ", inches)
      
     return distance_inches
