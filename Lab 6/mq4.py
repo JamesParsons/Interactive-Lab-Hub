@@ -2,7 +2,7 @@
 #import os
 #import subprocess
 #from time import sleep
-#import board
+import board
 #import numpy as np
 import busio
 import qwiic
