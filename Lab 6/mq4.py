@@ -25,7 +25,7 @@ def distances():
     distanceFeet = distance / 304.8 
     distance_inches = distanceFeet // 12
      
-    return distance_inches
+    return distanceFeet
 
 ###############################################################
 
