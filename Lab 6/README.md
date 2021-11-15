@@ -171,13 +171,21 @@ I am one with the collective. Hail color!
 
 Find at least one class (more are okay) partner, and design a distributed application together based on the exercise we asked you to do in this lab.
 
+James Parsons - jsp285       Victoria Zhang - cz237     Mahir Kothary - mk942
+
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 (ok who WOULDN'T want such a thing??  I think we could all use a banano.  A pianana)
 
+We made a game of HORSE using the distance sensors over a distributed system.  This was especially cool as two of us live off campus so it was a true distributed system.
 
-**\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+**\*\*\*2. Diagram the architecture of the system.\*\*\*** 
+Each individual pi has a distance sensor hooked up.  Each pi can send distance measurements.  Each pi receives, sees, and prints every distance that a player enters.  The main scoring program was run on James's computer.  The scoring program records and changes every player's score accordingly, which also gets published and can be seen by each individual pi.  Every node on the system receives and publishes alerts to the entire system.
 
-**\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
+![horse](https://user-images.githubusercontent.com/89811189/141792630-0761ff09-089a-4b90-ba24-c32b45ebb54f.jpeg)
+
+
+**\*\*\*3. Build a working prototype of the system.\*\*\*** 
+With proper signage people might understand the system.  With just the distance sensor connected to a raspberry pi out in the wild i imagine people would think 'Why is there a little computery doohickey out in the wild?  Why am I in the wild?  How did I get here?  Maybe if i jump around in front of this doohickey somebody will come get me'.  Since the pi is connected to a distributed system, someone might see their distance measurement and come rescue them.  We are saving lives.
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
