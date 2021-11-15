@@ -23,12 +23,12 @@ def distances():
     ToF.stop_ranging()
     
     distanceFeet = distance / 304.8 
-    distance_inches = distanceFeet * 12
     
-    inches = distanceFeet / 3.448
-    print("testing should be inches ", inches)
-     
-    return distance_inches
+    distanceInches = distance * 0.0393701
+    print("inches ", distanceInches)
+    
+    
+    return distanceFeet
 
 ###############################################################
 
