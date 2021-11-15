@@ -42,10 +42,10 @@ def listen():
 def press(key):
     if key == 'd':
         distance = distances()
-        print(distance)
+        #print(distance)
         
-    distance_lower_bar = distance * .9
-    distance_upper_bar = distance * 1.1
+    distance_lower_bar = round((distance * .9),3)
+    distance_upper_bar = round((distance * 1.1),3)
     
     response = (f"James measured {distance} your try must be between {distance_lower_bar} and {distance_upper_bar}")
     
