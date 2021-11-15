@@ -189,5 +189,15 @@ With proper signage people might understand the system.  With just the distance 
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+My set up (then I accidentally moved my pi so it is out of frame, but its there)
+
+https://user-images.githubusercontent.com/89811189/141866216-116e65b4-50f8-4119-83b5-4a8237ac7c85.mp4
+
+All of us playing!
+
+https://user-images.githubusercontent.com/89811189/141866225-71be7c7f-077b-4729-9aab-6674fa004c25.mp4
+
+
+
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
