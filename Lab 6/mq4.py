@@ -22,13 +22,15 @@ def distances():
     distance = ToF.get_distance()	 # Get the result of the measurement from the sensor
     ToF.stop_ranging()
     
-    distanceFeet = distance / 304.8 
+    #distanceFeet = distance / 304.8 
     
     distanceInches = distance * 0.0393701
-    print("inches ", distanceInches)
+    #print("inches ", distanceInches)
+    
+    distanceInches = round(distanceInches, 3)
     
     
-    return distanceFeet
+    return distanceInches
 
 ###############################################################
 
