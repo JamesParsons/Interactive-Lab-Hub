@@ -201,7 +201,7 @@ https://user-images.githubusercontent.com/89811189/141866225-71be7c7f-077b-4729-
 
 https://user-images.githubusercontent.com/89811189/141880106-9021cdf5-716e-425e-b486-eddf87e70ebf.mp4
 
-
+A 3 minute long video is available upon request (I dont know how to youtube it) or is also probably available on Mahir or Victoria's lab pages.
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
