@@ -114,6 +114,9 @@ def press(key):
         servo2.angle = 90 + two_adjuster
         servo3.angle = 90 + three_adjuster
         print(servo2.angle, two_adjuster," ", servo3.angle, three_adjuster)
+    if key == 'b':
+        servo2.angle = 45 + two_adjuster
+        servo3.angle = 135 + three_adjuster        
         
     if key == 'd':
         distances()
