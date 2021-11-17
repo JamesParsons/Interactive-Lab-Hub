@@ -84,10 +84,13 @@ def press(key):
         print("two adjuster now ", two_adjuster)
     if key == '[':
         two_adjuster = two_adjuster - 1
+        print("two adjuster now ", two_adjuster)
     if key == 'p':
         three_adjuster = three_adjuster + 1
+        print("three adjuster now ", three_adjuster)
     if key == 'o':
         three_adjuster = three_adjuster - 1
+        print("three adjuster now ", three_adjuster)
     
     #if key == 'up':
         #servo.angle = 50
