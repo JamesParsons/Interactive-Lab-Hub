@@ -30,16 +30,19 @@ kit2 = ServoKit(channels=16,address=0x41)
 servo = kit.servo[2]
 servo2 = kit.servo[1]
 servo3 = kit.servo[3]
-servo4 = kit2.servo[2]
+
+servo5 = kit2.servo[2]
+servo6 = kit2.servo[1]
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
 servo.set_pulse_width_range(500, 2500)
 servo2.set_pulse_width_range(500,2500)
 servo3.set_pulse_width_range(500,2500)
-servo4.set_pulse_width_range(500,2500)
 
-#continuous = servo3.ContinuousServo(3, min_pulse=750, max_pulse=2250)
+servo5.set_pulse_width_range(500,2500)
+servo6.set_pulse_width_range(500,2500)
+
 
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -83,6 +86,9 @@ def press(key):
     global two_adjuster
     global three_adjuster
     
+    global five_adjuster
+    global six_adjuster
+    
     if key == ']':
         two_adjuster = two_adjuster + 1
         print("two adjuster now ", two_adjuster)
@@ -93,13 +99,25 @@ def press(key):
         three_adjuster = three_adjuster + 1
         print("three adjuster now ", three_adjuster)
     if key == 'o':
-        three_adjuster = three_adjuster - 1
+        fthree_adjuster = three_adjuster - 1
         print("three adjuster now ", three_adjuster)
+    if key == 'i':
+        five_adjuster = five_adjuster + 1
+        print("five adjuster now ", five_adjuster)
+    if key == 'u':
+        five_adjuster = five_adjuster - 1
+        print("five adjuster now ", five_adjuster)
+    if key == 'y':
+        six_adjuster = six_adjuster + 1
+        print("six adjuster now ", six_adjuster)
+    if key == 't':
+        six_adjuster = six_adjuster - 1
+        print("six adjuster now ", six_adjuster)    
         
-    if key == 'right':
-        servo.angle = 50
-    if key == 'left':
-        servo.angle = 0
+    #if key == 'right':
+        #servo.angle = 50
+    #if key == 'left':
+        #servo.angle = 0
     if key == 'v':
         camera()
     if key == 'c':
@@ -117,7 +135,18 @@ def press(key):
         servo3.angle = 90 + three_adjuster
     if key == 'b':
         servo2.angle = 45 + two_adjuster
-        servo3.angle = 135 + three_adjuster        
+        servo3.angle = 135 + three_adjuster 
+    if key == 'right':
+        servo2.angle = 135 + two_adjuster
+        servo6.angle = 135 + six_adjuster
+        servo3.angle = 45 + three_adjuster 
+        servo5.angle = 45 + five_adjuster        
+    if key == 'left':
+        servo2.angle = 45 + two_adjuster
+        servo6.angle = 45 + six_adjuster        
+        servo3.angle = 135 + three_adjuster 
+        servo5.angle = 135 + five_adjuster
+ 
         
     if key == 'd':
         distances()
