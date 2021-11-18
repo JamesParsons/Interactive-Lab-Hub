@@ -31,8 +31,10 @@ servo = kit.servo[2]
 servo2 = kit.servo[1]
 servo3 = kit.servo[3]
 
+servo4 = kit2.servo[1]
 servo5 = kit2.servo[2]
-servo6 = kit2.servo[1]
+servo6 = kit2.servo[3]
+
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
@@ -40,6 +42,7 @@ servo.set_pulse_width_range(500, 2500)
 servo2.set_pulse_width_range(500,2500)
 servo3.set_pulse_width_range(500,2500)
 
+servo4.set_pulse_width_range(500,2500)
 servo5.set_pulse_width_range(500,2500)
 servo6.set_pulse_width_range(500,2500)
 
@@ -221,7 +224,9 @@ def listen():
 while True:
     
     two_adjuster = 0
-    three_adjuster = 0  
+    three_adjuster = 0 
+    five_adjuster = 0
+    six_adjuster = 0
     
     print("VL53L1X Qwiic Test\n")
     ToF = qwiic.QwiicVL53L1X()
