@@ -27,13 +27,16 @@ kit2 = ServoKit(channels=16,address=0x41)
 
 
 # Name and set up the servo according to the channel you are using.
-servo = kit.servo[2]
+servo1 = kit.servo[2]
 servo2 = kit.servo[1]
 servo3 = kit.servo[3]
 
 servo4 = kit2.servo[1]
 servo5 = kit2.servo[2]
 servo6 = kit2.servo[3]
+servo7 = kit2.servo[4]
+servo8 = kit2.servo[5]
+servo9 = kit2.servo[6]
 
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
@@ -45,6 +48,9 @@ servo3.set_pulse_width_range(500,2500)
 servo4.set_pulse_width_range(500,2500)
 servo5.set_pulse_width_range(500,2500)
 servo6.set_pulse_width_range(500,2500)
+servo7.set_pulse_width_range(500,2500)
+servo8.set_pulse_width_range(500,2500)
+servo9.set_pulse_width_range(500,2500)
 
 
 # Create the I2C interface.
@@ -135,6 +141,10 @@ def press(key):
         servo3.angle = 45 + three_adjuster
         servo5.angle = 45 + five_adjuster
         servo6.angle = 135 + six_adjuster
+        servo7.angle = 45 
+        servo8.angle = 45 
+        servo9.angle = 135         
+        
     if key == 'down':
         servo2.angle = 90 + two_adjuster
         servo3.angle = 90 + three_adjuster
