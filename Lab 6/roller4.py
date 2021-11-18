@@ -151,12 +151,12 @@ def press(key):
         servo2.angle = 135 + two_adjuster
         servo3.angle = 135 + three_adjuster
         servo5.angle = 135 + five_adjuster 
-        servo6.angle = 45 + six_adjuster        
+        servo6.angle = 135 + six_adjuster        
     if key == 'left':
         servo2.angle = 45 + two_adjuster
         servo3.angle = 45 + three_adjuster
         servo5.angle = 45 + five_adjuster 
-        servo6.angle = 135 + six_adjuster
+        servo6.angle = 45 + six_adjuster
  
         
     if key == 'd':
