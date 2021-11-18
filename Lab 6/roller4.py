@@ -102,7 +102,7 @@ def press(key):
         three_adjuster = three_adjuster + 1
         print("three adjuster now ", three_adjuster)
     if key == 'o':
-        fthree_adjuster = three_adjuster - 1
+        three_adjuster = three_adjuster - 1
         print("three adjuster now ", three_adjuster)
     if key == 'i':
         five_adjuster = five_adjuster + 1
@@ -133,12 +133,18 @@ def press(key):
     if key == 'up':
         servo2.angle = 135 + two_adjuster
         servo3.angle = 45 + three_adjuster
+        servo5.angle = 45 + five_adjuster
+        servo6.angle = 135 + six_adjuster
     if key == 'down':
         servo2.angle = 90 + two_adjuster
         servo3.angle = 90 + three_adjuster
+        servo5.angle = 90 + five_adjuster
+        servo6.angle = 90 + six_adjuster
     if key == 'b':
         servo2.angle = 45 + two_adjuster
-        servo3.angle = 135 + three_adjuster 
+        servo3.angle = 135 + three_adjuster
+        servo5.angle = 135 + five_adjuster
+        servo6.angle = 45 + six_adjuster
     if key == 'right':
         servo2.angle = 135 + two_adjuster
         servo6.angle = 135 + six_adjuster
