@@ -76,7 +76,7 @@ def open_slowly():
     for x in range(9):
         servo1.angle = x*10
         x = x + 1 
-        #time.sleep(.1)
+        time.sleep(.1)
     
 ################# distance sensor #########################
     
