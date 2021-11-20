@@ -39,7 +39,7 @@ servo6 = kit2.servo[4]
 
 # Set the pulse width range of your servo for PWM control of rotating 0-180 degree (min_pulse, max_pulse)
 # Each servo might be different, you can normally find this information in the servo datasheet
-servo1.set_pulse_width_range(500, 2500)
+servo1.set_pulse_width_range(500,2500)
 servo2.set_pulse_width_range(500,2500)
 servo3.set_pulse_width_range(500,2500)
 
@@ -61,13 +61,21 @@ i2c = busio.I2C(board.SCL, board.SDA)
 ############# open and close #############
 
 def open_and_close():
-    
+  
     # Set the servo to 90 degree position
     servo4.angle = 90
     time.sleep(1)
     
     servo4.angle = 0
     #time.sleep(2) 
+
+##################################################
+def open_slowly():
+
+    x = 0
+    for x in range(9):
+        servo4.angle = x*10
+        x = x + 1    
     
 ################# distance sensor #########################
     
