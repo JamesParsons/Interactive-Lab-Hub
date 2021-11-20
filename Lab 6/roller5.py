@@ -64,7 +64,7 @@ def open_and_close():
     
     # Set the servo to 90 degree position
     servo1.angle = 90
-    time.sleep(1)
+    #time.sleep(1)
     
     servo1.angle = 0
     #time.sleep(2) 
@@ -128,9 +128,9 @@ def press(key):
     if key == 'c':
         contours()
     if key == 'e':
-        servo4.angle = 45
+        servo1.angle = 45
     if key == 'w':
-        servo4.angle = 0
+        servo1.angle = 0
                      
     if key == 'up':
         servo2.angle = 135 + two_adjuster
@@ -174,7 +174,7 @@ def release(key):
 ################################################################
 
 def listen():
-    servo1.angle = 25    
+    #servo1.angle = 25    
     listen_keyboard(on_press=press, on_release=release,)
     #listen_keyboard(on_press=press)
 
