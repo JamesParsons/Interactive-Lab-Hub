@@ -154,7 +154,9 @@ def press(key):
         servo6.angle = 45 + six_adjuster
         
     if key == 'n':
-        open_and_close()
+        servo4.angle = 45
+    if key == 'b':
+        servo4.angle = 0
  
         
     if key == 'd':
