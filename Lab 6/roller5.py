@@ -64,7 +64,7 @@ def open_and_close():
     
     # Set the servo to 90 degree position
     servo1.angle = 90
-    #time.sleep(1)
+    time.sleep(1)
     
     servo1.angle = 0
     #time.sleep(2) 
@@ -152,6 +152,9 @@ def press(key):
         servo3.angle = 45 + three_adjuster
         servo5.angle = 45 + five_adjuster 
         servo6.angle = 45 + six_adjuster
+        
+    if key == 'a':
+        open_and_close()
  
         
     if key == 'd':
