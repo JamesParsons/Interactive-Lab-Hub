@@ -74,9 +74,9 @@ def open_slowly():
 
     x = 0
     for x in range(9):
-        servo4.angle = x*10
+        servo1.angle = x*10
         x = x + 1 
-        time.sleep(.1)
+        #time.sleep(.1)
     
 ################# distance sensor #########################
     
@@ -137,7 +137,8 @@ def press(key):
     if key == 'c':
         contours()
     if key == 'e':
-        servo1.angle = 60
+        #servo1.angle = 60
+        open_slowly()
     if key == 'w':
         servo1.angle = 0
                      
