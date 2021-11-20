@@ -66,7 +66,7 @@ def open_and_close():
     servo4.angle = 90
     time.sleep(1)
     
-    servo1.angle = 0
+    servo4.angle = 0
     #time.sleep(2) 
     
 ################# distance sensor #########################
@@ -154,7 +154,8 @@ def press(key):
         servo6.angle = 45 + six_adjuster
         
     if key == 'n':
-        servo4.angle = 45
+        servo4.angle = 90
+        #open_and_close()
     if key == 'b':
         servo4.angle = 0
  
