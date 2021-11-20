@@ -63,7 +63,7 @@ i2c = busio.I2C(board.SCL, board.SDA)
 def open_and_close():
     
     # Set the servo to 90 degree position
-    servo1.angle = 90
+    servo4.angle = 90
     time.sleep(1)
     
     servo1.angle = 0
@@ -153,7 +153,7 @@ def press(key):
         servo5.angle = 45 + five_adjuster 
         servo6.angle = 45 + six_adjuster
         
-    if key == 'a':
+    if key == 'n':
         open_and_close()
  
         
