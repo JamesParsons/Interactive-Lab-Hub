@@ -128,7 +128,7 @@ def press(key):
     if key == 'c':
         contours()
     if key == 'e':
-        servo1.angle = 80
+        servo1.angle = 60
     if key == 'w':
         servo1.angle = 0
                      
