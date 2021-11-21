@@ -73,7 +73,7 @@ def open_and_close():
 def open_slowly():
 
     x = 0
-    for x in range(9):
+    for x in range(6):
         servo1.angle = x*10
         x = x + 1 
         time.sleep(.1)
