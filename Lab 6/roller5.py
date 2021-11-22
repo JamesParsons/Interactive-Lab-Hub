@@ -1,5 +1,4 @@
 
-
 import numpy as np
 import cv2
 import sys
@@ -9,10 +8,10 @@ import busio
 from sshkeyboard import listen_keyboard
 import time
 import pulseio
-import qwiic_twist
+#import qwiic_twist
 
-import qwiic_joystick
-import qwiic
+#import qwiic_joystick
+#import qwiic
 
 
 
@@ -27,9 +26,9 @@ kit2 = ServoKit(channels=16,address=0x41)
 
 
 # Name and set up the servo according to the channel you are using.
+servo2 = kit.servo[1]  # Back Right
 servo1 = kit.servo[2]  # tile pusher
-servo2 = kit.servo[1]  # back left
-servo3 = kit.servo[3]  # back right
+servo3 = kit.servo[3]  # Front Right
 
 servo4 = kit2.servo[1] # nailing arm
 servo5 = kit2.servo[2] # front right
@@ -106,16 +105,16 @@ def press(key):
     
     if key == ']':
         two_adjuster = two_adjuster + 1
-        print("two adjuster now ", two_adjuster)
+        print("Back Right now ", two_adjuster)
     if key == '[':
         two_adjuster = two_adjuster - 1
-        print("two adjuster now ", two_adjuster)
+        print("Back Right now ", two_adjuster)
     if key == 'p':
         three_adjuster = three_adjuster + 1
-        print("three adjuster now ", three_adjuster)
+        print("Front Right forward", three_adjuster)
     if key == 'o':
         three_adjuster = three_adjuster - 1
-        print("three adjuster now ", three_adjuster)
+        print("Front Right backward ", three_adjuster)
     if key == 'i':
         five_adjuster = five_adjuster + 1
         print("five adjuster now ", five_adjuster)
@@ -144,22 +143,22 @@ def press(key):
         servo1.angle = 0
                      
     if key == 'up':
-        servo2.angle = 135 + two_adjuster
+        servo2.angle = 45 + two_adjuster
         servo3.angle = 45 + three_adjuster
         servo5.angle = 135 + five_adjuster
         servo6.angle = 45 + six_adjuster                
     if key == 'down':
-        servo2.angle = 45 + two_adjuster
+        servo2.angle = 135 + two_adjuster
         servo3.angle = 135 + three_adjuster
         servo5.angle = 45 + five_adjuster
         servo6.angle = 135 + six_adjuster        
     if key == 'right':
-        servo2.angle = 135 + two_adjuster
+        servo2.angle = 45 + two_adjuster
         servo3.angle = 135 + three_adjuster
         servo5.angle = 135 + five_adjuster 
         servo6.angle = 135 + six_adjuster        
     if key == 'left':
-        servo2.angle = 45 + two_adjuster
+        servo2.angle = 135 + two_adjuster
         servo3.angle = 45 + three_adjuster
         servo5.angle = 45 + five_adjuster 
         servo6.angle = 45 + six_adjuster
