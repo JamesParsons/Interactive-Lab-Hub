@@ -29,10 +29,11 @@ kit2 = ServoKit(channels=16,address=0x41)
 servo2 = kit.servo[1]  # Back Right
 servo1 = kit.servo[2]  # tile pusher
 servo3 = kit.servo[3]  # Front Right
+servo4 = kit.servo[15] # Nailing Arm
 
 servo4 = kit2.servo[1] # nailing arm
-servo5 = kit2.servo[2] # front right
-servo6 = kit2.servo[4] # front left
+servo5 = kit2.servo[2] # Front Left
+servo6 = kit2.servo[4] # Back Left
 servo7 = kit2.servo[3] # camera mount
 
 
@@ -117,16 +118,16 @@ def press(key):
         print("Front Right forward ", three_adjuster)
     if key == 'i':
         five_adjuster = five_adjuster + 1
-        print("five adjuster now ", five_adjuster)
+        print("Front Left forward ", five_adjuster)
     if key == 'u':
         five_adjuster = five_adjuster - 1
-        print("five adjuster now ", five_adjuster)
+        print("Front Left backward ", five_adjuster)
     if key == 'y':
         six_adjuster = six_adjuster + 1
-        print("six adjuster now ", six_adjuster)
+        print("Back Left forward", six_adjuster)
     if key == 't':
         six_adjuster = six_adjuster - 1
-        print("six adjuster now ", six_adjuster)    
+        print("Back Left backward ", six_adjuster)    
         
     #if key == 'right':
         #servo.angle = 50
@@ -169,11 +170,11 @@ def press(key):
     if key == 'b':
         servo4.angle = 0
         
-    if key == 'f':
+    if key == 'h':
         servo7.angle = 45
     if key == 'g':
         servo7.angle = 90
-    if key == 'h':
+    if key == 'f':
         servo7.angle = 135
  
         
