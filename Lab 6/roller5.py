@@ -1,7 +1,7 @@
 
 
 import numpy as np
-#import cv2
+import cv2
 import sys
 from adafruit_servokit import ServoKit
 import board
@@ -27,13 +27,14 @@ kit2 = ServoKit(channels=16,address=0x41)
 
 
 # Name and set up the servo according to the channel you are using.
-servo1 = kit.servo[2]
-servo2 = kit.servo[1]
-servo3 = kit.servo[3]
+servo1 = kit.servo[2]  # tile pusher
+servo2 = kit.servo[1]  # back left
+servo3 = kit.servo[3]  # back right
 
-servo4 = kit2.servo[1]
-servo5 = kit2.servo[2]
-servo6 = kit2.servo[4]
+servo4 = kit2.servo[1] # nailing arm
+servo5 = kit2.servo[2] # front right
+servo6 = kit2.servo[4] # front left
+servo7 = kit2.servo[3] # camera mount
 
 
 
@@ -168,6 +169,13 @@ def press(key):
         #open_and_close()
     if key == 'b':
         servo4.angle = 0
+        
+    if key == 'f':
+        servo7.angle = 45
+    if key == 'g':
+        servo7.angle = 90
+    if key == 'h':
+        servo7.angle = 135
  
         
     if key == 'd':
