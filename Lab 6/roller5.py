@@ -11,7 +11,7 @@ import pulseio
 #import qwiic_twist
 
 #import qwiic_joystick
-#import qwiic
+import qwiic
 
 
 
