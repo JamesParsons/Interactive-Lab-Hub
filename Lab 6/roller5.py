@@ -29,9 +29,9 @@ kit2 = ServoKit(channels=16,address=0x41)
 servo2 = kit.servo[1]  # Back Right
 servo1 = kit.servo[2]  # tile pusher
 servo3 = kit.servo[3]  # Front Right
-servo4 = kit.servo[15] # Nailing Arm
+#servo4 = kit2.servo[15] # Nailing Arm
 
-
+servo4 = kit2.servo[15] # Nailing Arm
 servo5 = kit2.servo[2] # Front Left
 servo6 = kit2.servo[4] # Back Left
 servo7 = kit2.servo[3] # camera mount
